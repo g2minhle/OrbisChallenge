@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<matches>
+  <match>
+    <score>
+      <playername>player</playername>
+      <value>300</value>
+    </score>
+    <score>
+      <playername>Human1</playername>
+      <value>300</value>
+    </score>
+  </match>
+  <match>
+    <score>
+      <playername>player</playername>
+      <value>0</value>
+    </score>
+    <score>
+      <playername>Human1</playername>
+      <value>0</value>
+    </score>
+  </match>
+</matches>

@@ -1,0 +1,2530 @@
+21/09/2013 12:26:27.763] - [INFO] - [id: 0x4e91d5e1] OPEN
+21/09/2013 12:26:27.808] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1362
+21/09/2013 12:26:27.812] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 12:26:28.747] - [INFO] - message sent: took 7,824,682
+21/09/2013 12:26:29.115] - [INFO] - message sent: took 2,342,136
+21/09/2013 12:26:30.026] - [INFO] - message sent: took 3,015,197
+21/09/2013 12:26:30.390] - [INFO] - message sent: took 2,483,151
+21/09/2013 12:26:30.771] - [INFO] - message sent: took 2,077,937
+21/09/2013 12:26:31.133] - [INFO] - message sent: took 1,875,330
+21/09/2013 12:26:31.484] - [INFO] - message sent: took 519,889
+21/09/2013 12:26:31.834] - [INFO] - message sent: took 306,747
+21/09/2013 12:26:32.179] - [INFO] - message sent: took 420,612
+21/09/2013 12:26:32.527] - [INFO] - message sent: took 420,612
+21/09/2013 12:26:32.875] - [INFO] - message sent: took 416,966
+21/09/2013 12:26:33.227] - [INFO] - message sent: took 419,802
+21/09/2013 12:26:33.575] - [INFO] - message sent: took 421,017
+21/09/2013 12:26:33.929] - [INFO] - message sent: took 422,233
+21/09/2013 12:26:34.275] - [INFO] - message sent: took 420,207
+21/09/2013 12:26:34.624] - [INFO] - message sent: took 418,181
+21/09/2013 12:26:34.979] - [INFO] - message sent: took 496,792
+21/09/2013 12:26:35.330] - [INFO] - message sent: took 432,769
+21/09/2013 12:26:35.676] - [INFO] - message sent: took 414,128
+21/09/2013 12:26:44.621] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 12:26:44.626] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 12:26:44.631] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 12:48:59.887] - [INFO] - [id: 0xd722714b] OPEN
+21/09/2013 12:48:59.899] - [INFO] - [id: 0xd722714b, /127.0.0.1:1595 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1595
+21/09/2013 12:48:59.901] - [INFO] - [id: 0xd722714b, /127.0.0.1:1595 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 12:49:00.396] - [SEVERE] - Exception thrown in getMove on turn 1
+java.lang.ArrayIndexOutOfBoundsException: 24
+	at PlayerAI.getMove(PlayerAI.java:78)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 12:49:51.761] - [INFO] - [id: 0x531a5cbb] OPEN
+21/09/2013 12:49:51.773] - [INFO] - [id: 0x531a5cbb, /127.0.0.1:1596 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1596
+21/09/2013 12:49:51.776] - [INFO] - [id: 0x531a5cbb, /127.0.0.1:1596 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 12:49:52.266] - [INFO] - message sent: took 6,858,246
+21/09/2013 12:49:52.657] - [INFO] - message sent: took 1,483,083
+21/09/2013 12:49:53.503] - [INFO] - message sent: took 3,041,536
+21/09/2013 12:49:53.865] - [INFO] - message sent: took 2,539,476
+21/09/2013 12:49:54.231] - [INFO] - message sent: took 2,041,063
+21/09/2013 12:49:54.581] - [INFO] - message sent: took 542,582
+21/09/2013 12:49:54.929] - [INFO] - message sent: took 394,679
+21/09/2013 12:49:55.275] - [INFO] - message sent: took 813,670
+21/09/2013 12:49:55.616] - [INFO] - message sent: took 415,749
+21/09/2013 12:49:55.962] - [INFO] - message sent: took 414,534
+21/09/2013 12:49:56.308] - [INFO] - message sent: took 425,474
+21/09/2013 12:49:56.657] - [INFO] - message sent: took 413,723
+21/09/2013 12:49:57.006] - [INFO] - message sent: took 414,129
+21/09/2013 12:49:57.352] - [INFO] - message sent: took 414,534
+21/09/2013 12:49:57.696] - [INFO] - message sent: took 412,913
+21/09/2013 12:49:58.048] - [INFO] - message sent: took 411,697
+21/09/2013 12:49:58.400] - [INFO] - message sent: took 460,728
+21/09/2013 12:49:58.752] - [INFO] - message sent: took 1,149,187
+21/09/2013 12:49:59.213] - [INFO] - message sent: took 416,155
+21/09/2013 12:50:21.385] - [INFO] - [id: 0x531a5cbb, /127.0.0.1:1596 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 12:50:21.389] - [INFO] - [id: 0x531a5cbb, /127.0.0.1:1596 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 12:50:21.392] - [INFO] - [id: 0x531a5cbb, /127.0.0.1:1596 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 12:52:03.188] - [INFO] - [id: 0x446d243d] OPEN
+21/09/2013 12:52:03.200] - [INFO] - [id: 0x446d243d, /127.0.0.1:1597 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1597
+21/09/2013 12:52:03.202] - [INFO] - [id: 0x446d243d, /127.0.0.1:1597 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 12:52:03.693] - [INFO] - message sent: took 7,402,854
+21/09/2013 12:52:04.052] - [INFO] - message sent: took 2,505,033
+21/09/2013 12:52:04.529] - [INFO] - message sent: took 2,421,559
+21/09/2013 12:52:04.893] - [INFO] - message sent: took 3,046,804
+21/09/2013 12:52:05.254] - [INFO] - message sent: took 1,994,869
+21/09/2013 12:52:05.617] - [INFO] - message sent: took 1,130,547
+21/09/2013 12:52:05.967] - [INFO] - message sent: took 512,191
+21/09/2013 12:52:06.315] - [INFO] - message sent: took 404,404
+21/09/2013 12:52:06.660] - [INFO] - message sent: took 817,317
+21/09/2013 12:52:07.007] - [INFO] - message sent: took 1,092,862
+21/09/2013 12:52:07.354] - [INFO] - message sent: took 414,939
+21/09/2013 12:52:07.699] - [INFO] - message sent: took 738,300
+21/09/2013 12:52:08.043] - [INFO] - message sent: took 1,278,855
+21/09/2013 12:52:08.388] - [INFO] - message sent: took 734,248
+21/09/2013 12:52:08.734] - [INFO] - message sent: took 416,965
+21/09/2013 12:52:09.087] - [INFO] - message sent: took 360,235
+21/09/2013 12:52:09.542] - [INFO] - message sent: took 409,671
+21/09/2013 12:52:31.692] - [INFO] - [id: 0x446d243d, /127.0.0.1:1597 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 12:52:31.697] - [INFO] - [id: 0x446d243d, /127.0.0.1:1597 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 12:52:31.707] - [INFO] - [id: 0x446d243d, /127.0.0.1:1597 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:23:00.072] - [INFO] - [id: 0x5e896087] OPEN
+21/09/2013 01:23:00.083] - [INFO] - [id: 0x5e896087, /127.0.0.1:1844 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1844
+21/09/2013 01:23:00.085] - [INFO] - [id: 0x5e896087, /127.0.0.1:1844 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:23:01.067] - [INFO] - message sent: took 7,934,089
+21/09/2013 01:23:01.431] - [INFO] - message sent: took 2,415,886
+21/09/2013 01:23:01.911] - [INFO] - message sent: took 2,419,938
+21/09/2013 01:23:02.268] - [INFO] - message sent: took 2,272,034
+21/09/2013 01:23:02.769] - [INFO] - message sent: took 1,205,106
+21/09/2013 01:23:03.124] - [INFO] - message sent: took 679,543
+21/09/2013 01:23:03.476] - [INFO] - message sent: took 469,643
+21/09/2013 01:23:03.826] - [INFO] - message sent: took 401,972
+21/09/2013 01:23:04.179] - [INFO] - message sent: took 416,560
+21/09/2013 01:23:04.527] - [INFO] - message sent: took 415,344
+21/09/2013 01:23:04.878] - [INFO] - message sent: took 409,266
+21/09/2013 01:23:05.221] - [INFO] - message sent: took 340,785
+21/09/2013 01:23:05.569] - [INFO] - message sent: took 384,548
+21/09/2013 01:23:05.920] - [INFO] - message sent: took 389,411
+21/09/2013 01:23:06.267] - [INFO] - message sent: took 389,410
+21/09/2013 01:23:22.961] - [INFO] - [id: 0x5e896087, /127.0.0.1:1844 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:23:22.964] - [INFO] - [id: 0x5e896087, /127.0.0.1:1844 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:23:22.965] - [INFO] - [id: 0x5e896087, /127.0.0.1:1844 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:23:50.356] - [INFO] - [id: 0x0b087aa0] OPEN
+21/09/2013 01:23:50.368] - [INFO] - [id: 0x0b087aa0, /127.0.0.1:1845 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1845
+21/09/2013 01:23:50.369] - [INFO] - [id: 0x0b087aa0, /127.0.0.1:1845 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:23:50.945] - [INFO] - message sent: took 9,878,711
+21/09/2013 01:23:51.308] - [INFO] - message sent: took 2,417,101
+21/09/2013 01:23:51.778] - [INFO] - message sent: took 2,434,930
+21/09/2013 01:23:52.129] - [INFO] - message sent: took 1,872,899
+21/09/2013 01:23:52.496] - [INFO] - message sent: took 1,424,732
+21/09/2013 01:23:52.855] - [INFO] - message sent: took 742,757
+21/09/2013 01:23:53.204] - [INFO] - message sent: took 492,335
+21/09/2013 01:23:53.553] - [INFO] - message sent: took 412,913
+21/09/2013 01:23:53.906] - [INFO] - message sent: took 408,050
+21/09/2013 01:23:54.259] - [INFO] - message sent: took 406,430
+21/09/2013 01:23:54.605] - [INFO] - message sent: took 418,586
+21/09/2013 01:23:54.953] - [INFO] - message sent: took 407,240
+21/09/2013 01:23:55.301] - [INFO] - message sent: took 413,318
+21/09/2013 01:23:55.649] - [INFO] - message sent: took 401,567
+21/09/2013 01:23:55.995] - [INFO] - message sent: took 393,868
+21/09/2013 01:23:56.449] - [INFO] - message sent: took 427,501
+21/09/2013 01:23:56.799] - [INFO] - message sent: took 455,866
+21/09/2013 01:23:57.207] - [INFO] - message sent: took 418,586
+21/09/2013 01:23:57.556] - [INFO] - message sent: took 413,318
+21/09/2013 01:23:57.909] - [INFO] - message sent: took 412,508
+21/09/2013 01:23:58.281] - [INFO] - message sent: took 426,691
+21/09/2013 01:23:58.626] - [INFO] - message sent: took 405,214
+21/09/2013 01:23:58.971] - [INFO] - message sent: took 412,508
+21/09/2013 01:23:59.337] - [INFO] - message sent: took 413,723
+21/09/2013 01:23:59.688] - [INFO] - message sent: took 411,697
+21/09/2013 01:24:00.040] - [INFO] - message sent: took 416,560
+21/09/2013 01:24:00.383] - [INFO] - message sent: took 408,861
+21/09/2013 01:24:00.727] - [INFO] - message sent: took 413,319
+21/09/2013 01:24:01.074] - [INFO] - message sent: took 404,809
+21/09/2013 01:24:01.422] - [INFO] - message sent: took 411,292
+21/09/2013 01:24:01.768] - [INFO] - message sent: took 418,991
+21/09/2013 01:24:02.126] - [INFO] - message sent: took 431,148
+21/09/2013 01:24:02.475] - [INFO] - message sent: took 414,939
+21/09/2013 01:24:02.825] - [INFO] - message sent: took 422,638
+21/09/2013 01:24:03.171] - [INFO] - message sent: took 409,671
+21/09/2013 01:24:03.513] - [INFO] - message sent: took 404,404
+21/09/2013 01:24:03.863] - [INFO] - message sent: took 406,025
+21/09/2013 01:24:04.218] - [INFO] - message sent: took 414,939
+21/09/2013 01:24:04.561] - [INFO] - message sent: took 408,456
+21/09/2013 01:24:04.902] - [INFO] - message sent: took 406,835
+21/09/2013 01:24:05.355] - [INFO] - message sent: took 329,034
+21/09/2013 01:24:05.695] - [INFO] - message sent: took 304,316
+21/09/2013 01:24:06.063] - [INFO] - message sent: took 287,702
+21/09/2013 01:24:06.407] - [INFO] - message sent: took 414,129
+21/09/2013 01:24:06.754] - [INFO] - message sent: took 418,181
+21/09/2013 01:24:07.103] - [INFO] - message sent: took 310,394
+21/09/2013 01:24:07.448] - [INFO] - message sent: took 412,102
+21/09/2013 01:24:07.796] - [INFO] - message sent: took 412,102
+21/09/2013 01:24:08.142] - [INFO] - message sent: took 418,181
+21/09/2013 01:24:08.487] - [INFO] - message sent: took 411,292
+21/09/2013 01:24:08.832] - [INFO] - message sent: took 435,200
+21/09/2013 01:24:09.279] - [INFO] - message sent: took 410,887
+21/09/2013 01:24:09.625] - [INFO] - message sent: took 411,697
+21/09/2013 01:24:09.969] - [INFO] - message sent: took 427,096
+21/09/2013 01:24:10.318] - [INFO] - message sent: took 415,344
+21/09/2013 01:24:10.672] - [INFO] - message sent: took 409,671
+21/09/2013 01:24:11.018] - [INFO] - message sent: took 457,082
+21/09/2013 01:24:11.366] - [INFO] - message sent: took 433,174
+21/09/2013 01:24:11.717] - [INFO] - message sent: took 414,534
+21/09/2013 01:24:12.070] - [INFO] - message sent: took 358,210
+21/09/2013 01:24:12.431] - [INFO] - message sent: took 322,145
+21/09/2013 01:24:26.169] - [INFO] - [id: 0x0b087aa0, /127.0.0.1:1845 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:24:26.174] - [INFO] - [id: 0x0b087aa0, /127.0.0.1:1845 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:24:26.176] - [INFO] - [id: 0x0b087aa0, /127.0.0.1:1845 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:25:31.570] - [INFO] - [id: 0x561d3852] OPEN
+21/09/2013 01:25:31.582] - [INFO] - [id: 0x561d3852, /127.0.0.1:1846 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1846
+21/09/2013 01:25:31.584] - [INFO] - [id: 0x561d3852, /127.0.0.1:1846 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:25:32.072] - [INFO] - message sent: took 8,066,595
+21/09/2013 01:25:32.436] - [INFO] - message sent: took 2,811,374
+21/09/2013 01:25:32.789] - [INFO] - message sent: took 2,462,486
+21/09/2013 01:25:33.146] - [INFO] - message sent: took 2,738,436
+21/09/2013 01:25:33.514] - [INFO] - message sent: took 5,161,615
+21/09/2013 01:25:58.790] - [INFO] - [id: 0x561d3852, /127.0.0.1:1846 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:25:58.792] - [INFO] - [id: 0x561d3852, /127.0.0.1:1846 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:25:58.793] - [INFO] - [id: 0x561d3852, /127.0.0.1:1846 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:26:55.582] - [INFO] - [id: 0xa510a81c] OPEN
+21/09/2013 01:26:55.594] - [INFO] - [id: 0xa510a81c, /127.0.0.1:1847 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1847
+21/09/2013 01:26:55.596] - [INFO] - [id: 0xa510a81c, /127.0.0.1:1847 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:26:56.093] - [INFO] - message sent: took 5,947,731
+21/09/2013 01:26:56.453] - [INFO] - message sent: took 2,449,924
+21/09/2013 01:26:56.924] - [INFO] - message sent: took 2,477,479
+21/09/2013 01:27:07.385] - [INFO] - [id: 0xa510a81c, /127.0.0.1:1847 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:27:07.388] - [INFO] - [id: 0xa510a81c, /127.0.0.1:1847 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:27:07.389] - [INFO] - [id: 0xa510a81c, /127.0.0.1:1847 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:32:42.315] - [INFO] - [id: 0x2afc2296] OPEN
+21/09/2013 01:32:42.327] - [INFO] - [id: 0x2afc2296, /127.0.0.1:1876 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1876
+21/09/2013 01:32:42.329] - [INFO] - [id: 0x2afc2296, /127.0.0.1:1876 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:32:43.475] - [INFO] - message sent: took 10,407,516
+21/09/2013 01:32:43.855] - [INFO] - message sent: took 5,357,739
+21/09/2013 01:32:44.211] - [INFO] - message sent: took 3,505,506
+21/09/2013 01:32:44.571] - [INFO] - message sent: took 4,693,999
+21/09/2013 01:32:44.987] - [INFO] - message sent: took 53,184,738
+21/09/2013 01:32:45.336] - [INFO] - message sent: took 2,607,552
+21/09/2013 01:32:45.683] - [INFO] - message sent: took 1,885,055
+21/09/2013 01:32:46.027] - [INFO] - message sent: took 700,210
+21/09/2013 01:32:46.375] - [INFO] - message sent: took 1,132,978
+21/09/2013 01:32:46.726] - [INFO] - message sent: took 811,238
+21/09/2013 01:32:47.078] - [INFO] - message sent: took 859,864
+21/09/2013 01:32:47.433] - [INFO] - message sent: took 746,809
+21/09/2013 01:32:47.783] - [INFO] - message sent: took 626,461
+21/09/2013 01:32:48.135] - [INFO] - message sent: took 840,414
+21/09/2013 01:32:48.487] - [INFO] - message sent: took 5,338,694
+21/09/2013 01:32:48.848] - [INFO] - message sent: took 564,463
+21/09/2013 01:32:49.198] - [INFO] - message sent: took 919,836
+21/09/2013 01:33:06.371] - [INFO] - [id: 0x2afc2296, /127.0.0.1:1876 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:33:06.375] - [INFO] - [id: 0x2afc2296, /127.0.0.1:1876 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:33:06.377] - [INFO] - [id: 0x2afc2296, /127.0.0.1:1876 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:33:42.095] - [INFO] - [id: 0x7224782f] OPEN
+21/09/2013 01:33:42.107] - [INFO] - [id: 0x7224782f, /127.0.0.1:1877 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1877
+21/09/2013 01:33:42.109] - [INFO] - [id: 0x7224782f, /127.0.0.1:1877 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:33:42.606] - [INFO] - message sent: took 11,577,774
+21/09/2013 01:33:42.963] - [INFO] - message sent: took 7,254,951
+21/09/2013 01:33:51.443] - [INFO] - [id: 0x7224782f, /127.0.0.1:1877 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:33:51.447] - [INFO] - [id: 0x7224782f, /127.0.0.1:1877 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:33:51.449] - [INFO] - [id: 0x7224782f, /127.0.0.1:1877 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:47:37.895] - [INFO] - [id: 0x1e316e46] OPEN
+21/09/2013 01:47:37.907] - [INFO] - [id: 0x1e316e46, /127.0.0.1:1911 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1911
+21/09/2013 01:47:37.909] - [INFO] - [id: 0x1e316e46, /127.0.0.1:1911 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:47:38.409] - [INFO] - message sent: took 9,118,530
+21/09/2013 01:47:38.775] - [INFO] - message sent: took 1,440,941
+21/09/2013 01:47:39.246] - [INFO] - message sent: took 2,225,841
+21/09/2013 01:47:57.690] - [INFO] - [id: 0x1e316e46, /127.0.0.1:1911 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:47:57.692] - [INFO] - [id: 0x1e316e46, /127.0.0.1:1911 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:47:57.695] - [INFO] - [id: 0x1e316e46, /127.0.0.1:1911 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:51:04.157] - [INFO] - [id: 0xa7ff3f77] OPEN
+21/09/2013 01:51:04.169] - [INFO] - [id: 0xa7ff3f77, /127.0.0.1:1918 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1918
+21/09/2013 01:51:04.172] - [INFO] - [id: 0xa7ff3f77, /127.0.0.1:1918 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:51:05.175] - [INFO] - message sent: took 6,345,245
+21/09/2013 01:51:05.543] - [INFO] - message sent: took 2,424,395
+21/09/2013 01:51:06.017] - [INFO] - message sent: took 3,662,323
+21/09/2013 01:51:06.384] - [INFO] - message sent: took 2,416,291
+21/09/2013 01:51:06.750] - [INFO] - message sent: took 3,355,577
+21/09/2013 01:51:07.104] - [SEVERE] - Exception thrown in getMove on turn 6
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:111)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 01:52:12.805] - [INFO] - [id: 0x38b6b209] OPEN
+21/09/2013 01:52:12.817] - [INFO] - [id: 0x38b6b209, /127.0.0.1:1922 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1922
+21/09/2013 01:52:12.819] - [INFO] - [id: 0x38b6b209, /127.0.0.1:1922 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:52:13.324] - [INFO] - message sent: took 5,106,912
+21/09/2013 01:52:13.693] - [INFO] - message sent: took 1,793,072
+21/09/2013 01:52:14.072] - [INFO] - message sent: took 2,089,283
+21/09/2013 01:52:14.430] - [INFO] - message sent: took 4,487,340
+21/09/2013 01:52:14.922] - [INFO] - message sent: took 1,205,917
+21/09/2013 01:52:15.273] - [INFO] - message sent: took 471,670
+21/09/2013 01:52:27.865] - [INFO] - [id: 0x38b6b209, /127.0.0.1:1922 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:52:27.868] - [INFO] - [id: 0x38b6b209, /127.0.0.1:1922 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:52:27.871] - [INFO] - [id: 0x38b6b209, /127.0.0.1:1922 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:53:10.928] - [INFO] - [id: 0x8f3e5d33] OPEN
+21/09/2013 01:53:10.940] - [INFO] - [id: 0x8f3e5d33, /127.0.0.1:1923 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1923
+21/09/2013 01:53:10.942] - [INFO] - [id: 0x8f3e5d33, /127.0.0.1:1923 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:53:11.425] - [INFO] - message sent: took 4,741,004
+21/09/2013 01:53:11.789] - [INFO] - message sent: took 2,192,612
+21/09/2013 01:53:12.287] - [INFO] - message sent: took 1,859,932
+21/09/2013 01:53:12.641] - [INFO] - message sent: took 2,193,828
+21/09/2013 01:53:13.134] - [INFO] - message sent: took 8,718,584
+21/09/2013 01:53:24.527] - [INFO] - [id: 0x8f3e5d33, /127.0.0.1:1923 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:53:24.530] - [INFO] - [id: 0x8f3e5d33, /127.0.0.1:1923 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:53:24.533] - [INFO] - [id: 0x8f3e5d33, /127.0.0.1:1923 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:54:03.298] - [INFO] - [id: 0x9f3d4c98] OPEN
+21/09/2013 01:54:03.309] - [INFO] - [id: 0x9f3d4c98, /127.0.0.1:1924 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1924
+21/09/2013 01:54:03.312] - [INFO] - [id: 0x9f3d4c98, /127.0.0.1:1924 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:54:03.810] - [INFO] - message sent: took 4,753,971
+21/09/2013 01:54:04.707] - [INFO] - message sent: took 2,441,415
+21/09/2013 01:54:05.078] - [INFO] - message sent: took 2,386,305
+21/09/2013 01:54:05.434] - [INFO] - message sent: took 2,464,916
+21/09/2013 01:54:05.797] - [INFO] - message sent: took 1,940,164
+21/09/2013 01:54:06.166] - [INFO] - message sent: took 471,669
+21/09/2013 01:54:06.503] - [INFO] - message sent: took 335,517
+21/09/2013 01:54:06.871] - [INFO] - message sent: took 361,451
+21/09/2013 01:54:07.219] - [INFO] - message sent: took 364,287
+21/09/2013 01:54:07.567] - [INFO] - message sent: took 327,007
+21/09/2013 01:54:07.912] - [INFO] - message sent: took 344,837
+21/09/2013 01:54:08.258] - [INFO] - message sent: took 343,216
+21/09/2013 01:54:08.612] - [INFO] - message sent: took 390,626
+21/09/2013 01:54:08.959] - [INFO] - message sent: took 269,467
+21/09/2013 01:54:09.304] - [INFO] - message sent: took 364,693
+21/09/2013 01:54:09.656] - [INFO] - message sent: took 327,818
+21/09/2013 01:54:10.003] - [INFO] - message sent: took 345,243
+21/09/2013 01:54:10.354] - [INFO] - message sent: took 355,373
+21/09/2013 01:54:10.702] - [INFO] - message sent: took 310,799
+21/09/2013 01:54:11.045] - [INFO] - message sent: took 359,830
+21/09/2013 01:54:11.412] - [INFO] - message sent: took 658,878
+21/09/2013 01:54:11.757] - [INFO] - message sent: took 367,529
+21/09/2013 01:54:12.104] - [INFO] - message sent: took 360,641
+21/09/2013 01:54:12.461] - [INFO] - message sent: took 548,660
+21/09/2013 01:54:12.917] - [INFO] - message sent: took 364,288
+21/09/2013 01:54:13.266] - [INFO] - message sent: took 360,641
+21/09/2013 01:54:13.620] - [INFO] - message sent: took 349,294
+21/09/2013 01:54:13.970] - [INFO] - message sent: took 268,657
+21/09/2013 01:54:14.315] - [INFO] - message sent: took 363,477
+21/09/2013 01:54:14.661] - [INFO] - message sent: took 363,477
+21/09/2013 01:54:15.006] - [INFO] - message sent: took 364,693
+21/09/2013 01:54:15.353] - [INFO] - message sent: took 397,110
+21/09/2013 01:54:15.702] - [INFO] - message sent: took 383,333
+21/09/2013 01:54:16.053] - [INFO] - message sent: took 363,882
+21/09/2013 01:54:16.399] - [INFO] - message sent: took 371,582
+21/09/2013 01:54:16.745] - [INFO] - message sent: took 368,339
+21/09/2013 01:54:17.095] - [INFO] - message sent: took 305,936
+21/09/2013 01:54:17.440] - [INFO] - message sent: took 364,693
+21/09/2013 01:54:17.784] - [INFO] - message sent: took 363,072
+21/09/2013 01:54:18.132] - [INFO] - message sent: took 359,830
+21/09/2013 01:54:18.483] - [INFO] - message sent: took 354,967
+21/09/2013 01:54:18.831] - [INFO] - message sent: took 311,204
+21/09/2013 01:54:19.203] - [INFO] - message sent: took 363,882
+21/09/2013 01:54:19.553] - [INFO] - message sent: took 362,667
+21/09/2013 01:54:19.904] - [INFO] - message sent: took 363,477
+21/09/2013 01:54:20.251] - [INFO] - message sent: took 366,314
+21/09/2013 01:54:20.596] - [INFO] - message sent: took 362,261
+21/09/2013 01:54:20.944] - [INFO] - message sent: took 365,503
+21/09/2013 01:54:21.291] - [INFO] - message sent: took 365,503
+21/09/2013 01:54:21.637] - [INFO] - message sent: took 265,820
+21/09/2013 01:54:21.984] - [INFO] - message sent: took 363,072
+21/09/2013 01:54:22.327] - [INFO] - message sent: took 383,737
+21/09/2013 01:54:22.673] - [INFO] - message sent: took 365,503
+21/09/2013 01:54:23.018] - [INFO] - message sent: took 363,883
+21/09/2013 01:54:23.369] - [INFO] - message sent: took 366,314
+21/09/2013 01:54:23.719] - [INFO] - message sent: took 278,382
+21/09/2013 01:54:24.065] - [INFO] - message sent: took 364,287
+21/09/2013 01:54:24.413] - [INFO] - message sent: took 303,506
+21/09/2013 01:54:24.759] - [INFO] - message sent: took 407,645
+21/09/2013 01:54:25.110] - [INFO] - message sent: took 365,908
+21/09/2013 01:54:25.454] - [INFO] - message sent: took 363,071
+21/09/2013 01:54:25.798] - [INFO] - message sent: took 376,444
+21/09/2013 01:54:26.265] - [INFO] - message sent: took 291,754
+21/09/2013 01:54:26.610] - [INFO] - message sent: took 369,961
+21/09/2013 01:54:26.954] - [INFO] - message sent: took 364,692
+21/09/2013 01:54:27.302] - [INFO] - message sent: took 286,486
+21/09/2013 01:54:27.644] - [INFO] - message sent: took 342,406
+21/09/2013 01:54:27.984] - [INFO] - message sent: took 262,173
+21/09/2013 01:54:28.328] - [INFO] - message sent: took 367,935
+21/09/2013 01:54:28.674] - [INFO] - message sent: took 369,960
+21/09/2013 01:54:29.020] - [INFO] - message sent: took 364,692
+21/09/2013 01:54:29.373] - [INFO] - message sent: took 360,641
+21/09/2013 01:54:29.836] - [INFO] - message sent: took 355,778
+21/09/2013 01:54:30.182] - [INFO] - message sent: took 354,967
+21/09/2013 01:54:30.219] - [INFO] - [id: 0x9f3d4c98, /127.0.0.1:1924 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:54:30.220] - [INFO] - [id: 0x9f3d4c98, /127.0.0.1:1924 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:54:30.221] - [INFO] - [id: 0x9f3d4c98, /127.0.0.1:1924 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:54:38.560] - [INFO] - [id: 0x84b56ebd] OPEN
+21/09/2013 01:54:38.572] - [INFO] - [id: 0x84b56ebd, /127.0.0.1:1925 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1925
+21/09/2013 01:54:38.574] - [INFO] - [id: 0x84b56ebd, /127.0.0.1:1925 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:54:39.557] - [INFO] - message sent: took 6,286,084
+21/09/2013 01:54:39.936] - [INFO] - message sent: took 2,605,931
+21/09/2013 01:54:40.297] - [INFO] - message sent: took 2,577,972
+21/09/2013 01:54:40.658] - [INFO] - message sent: took 2,371,312
+21/09/2013 01:54:41.014] - [INFO] - message sent: took 2,819,479
+21/09/2013 01:54:41.391] - [INFO] - message sent: took 495,171
+21/09/2013 01:54:41.742] - [INFO] - message sent: took 472,885
+21/09/2013 01:54:42.095] - [INFO] - message sent: took 382,117
+21/09/2013 01:54:42.444] - [INFO] - message sent: took 355,372
+21/09/2013 01:55:00.715] - [INFO] - [id: 0x84b56ebd, /127.0.0.1:1925 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:55:00.718] - [INFO] - [id: 0x84b56ebd, /127.0.0.1:1925 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:55:00.720] - [INFO] - [id: 0x84b56ebd, /127.0.0.1:1925 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:55:42.683] - [INFO] - [id: 0xebbe5447] OPEN
+21/09/2013 01:55:42.694] - [INFO] - [id: 0xebbe5447, /127.0.0.1:1928 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1928
+21/09/2013 01:55:42.696] - [INFO] - [id: 0xebbe5447, /127.0.0.1:1928 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:55:43.197] - [INFO] - message sent: took 5,125,147
+21/09/2013 01:55:43.565] - [INFO] - message sent: took 2,565,005
+21/09/2013 01:55:43.922] - [INFO] - message sent: took 3,882,761
+21/09/2013 01:55:44.268] - [INFO] - message sent: took 2,435,336
+21/09/2013 01:55:44.795] - [INFO] - message sent: took 9,719,462
+21/09/2013 01:55:54.429] - [INFO] - [id: 0xebbe5447, /127.0.0.1:1928 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:55:54.431] - [INFO] - [id: 0xebbe5447, /127.0.0.1:1928 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:55:54.432] - [INFO] - [id: 0xebbe5447, /127.0.0.1:1928 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:56:05.077] - [INFO] - [id: 0x6c99c9a6] OPEN
+21/09/2013 01:56:05.089] - [INFO] - [id: 0x6c99c9a6, /127.0.0.1:1929 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1929
+21/09/2013 01:56:05.090] - [INFO] - [id: 0x6c99c9a6, /127.0.0.1:1929 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:56:05.610] - [INFO] - message sent: took 7,737,966
+21/09/2013 01:56:05.978] - [INFO] - message sent: took 1,815,764
+21/09/2013 01:56:06.349] - [INFO] - message sent: took 2,384,684
+21/09/2013 01:56:06.716] - [INFO] - message sent: took 2,633,485
+21/09/2013 01:56:07.205] - [INFO] - message sent: took 1,756,197
+21/09/2013 01:56:07.559] - [INFO] - message sent: took 476,126
+21/09/2013 01:56:07.904] - [INFO] - message sent: took 313,635
+21/09/2013 01:56:08.253] - [INFO] - message sent: took 359,830
+21/09/2013 01:56:08.599] - [INFO] - message sent: took 361,046
+21/09/2013 01:56:08.943] - [INFO] - message sent: took 361,451
+21/09/2013 01:56:09.290] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:09.636] - [INFO] - message sent: took 376,444
+21/09/2013 01:56:09.978] - [INFO] - message sent: took 356,993
+21/09/2013 01:56:10.331] - [INFO] - message sent: took 382,928
+21/09/2013 01:56:10.676] - [INFO] - message sent: took 358,614
+21/09/2013 01:56:11.020] - [INFO] - message sent: took 365,503
+21/09/2013 01:56:11.473] - [INFO] - message sent: took 420,612
+21/09/2013 01:56:11.821] - [INFO] - message sent: took 363,072
+21/09/2013 01:56:12.163] - [INFO] - message sent: took 359,830
+21/09/2013 01:56:12.509] - [INFO] - message sent: took 368,744
+21/09/2013 01:56:12.853] - [INFO] - message sent: took 365,908
+21/09/2013 01:56:13.201] - [INFO] - message sent: took 351,725
+21/09/2013 01:56:13.546] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:13.891] - [INFO] - message sent: took 360,235
+21/09/2013 01:56:14.238] - [INFO] - message sent: took 374,012
+21/09/2013 01:56:14.586] - [INFO] - message sent: took 356,183
+21/09/2013 01:56:14.932] - [INFO] - message sent: took 356,588
+21/09/2013 01:56:15.277] - [INFO] - message sent: took 361,045
+21/09/2013 01:56:15.619] - [INFO] - message sent: took 353,752
+21/09/2013 01:56:15.962] - [INFO] - message sent: took 357,804
+21/09/2013 01:56:16.306] - [INFO] - message sent: took 260,147
+21/09/2013 01:56:16.650] - [INFO] - message sent: took 361,450
+21/09/2013 01:56:16.994] - [INFO] - message sent: took 384,548
+21/09/2013 01:56:17.343] - [INFO] - message sent: took 360,235
+21/09/2013 01:56:17.685] - [INFO] - message sent: took 365,098
+21/09/2013 01:56:18.030] - [INFO] - message sent: took 509,759
+21/09/2013 01:56:18.378] - [INFO] - message sent: took 364,693
+21/09/2013 01:56:18.724] - [INFO] - message sent: took 360,640
+21/09/2013 01:56:19.067] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:19.412] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:19.760] - [INFO] - message sent: took 361,046
+21/09/2013 01:56:20.107] - [INFO] - message sent: took 360,640
+21/09/2013 01:56:20.449] - [INFO] - message sent: took 360,641
+21/09/2013 01:56:20.795] - [INFO] - message sent: took 368,339
+21/09/2013 01:56:21.141] - [INFO] - message sent: took 354,157
+21/09/2013 01:56:21.488] - [INFO] - message sent: took 366,314
+21/09/2013 01:56:21.833] - [INFO] - message sent: took 377,254
+21/09/2013 01:56:22.177] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:22.522] - [INFO] - message sent: took 356,183
+21/09/2013 01:56:22.865] - [INFO] - message sent: took 362,667
+21/09/2013 01:56:23.214] - [INFO] - message sent: took 371,176
+21/09/2013 01:56:23.570] - [INFO] - message sent: took 365,098
+21/09/2013 01:56:23.918] - [INFO] - message sent: took 370,771
+21/09/2013 01:56:24.264] - [INFO] - message sent: took 412,913
+21/09/2013 01:56:24.613] - [INFO] - message sent: took 1,077,463
+21/09/2013 01:56:24.966] - [INFO] - message sent: took 364,692
+21/09/2013 01:56:25.311] - [INFO] - message sent: took 361,046
+21/09/2013 01:56:25.656] - [INFO] - message sent: took 377,659
+21/09/2013 01:56:26.002] - [INFO] - message sent: took 363,882
+21/09/2013 01:56:26.347] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:26.693] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:27.040] - [INFO] - message sent: took 363,072
+21/09/2013 01:56:27.384] - [INFO] - message sent: took 378,470
+21/09/2013 01:56:27.843] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:28.189] - [INFO] - message sent: took 365,909
+21/09/2013 01:56:28.546] - [INFO] - message sent: took 288,512
+21/09/2013 01:56:28.901] - [INFO] - message sent: took 373,202
+21/09/2013 01:56:29.248] - [INFO] - message sent: took 373,202
+21/09/2013 01:56:29.591] - [INFO] - message sent: took 359,830
+21/09/2013 01:56:29.934] - [INFO] - message sent: took 355,373
+21/09/2013 01:56:30.282] - [INFO] - message sent: took 364,287
+21/09/2013 01:56:30.634] - [INFO] - message sent: took 361,451
+21/09/2013 01:56:30.982] - [INFO] - message sent: took 356,589
+21/09/2013 01:56:31.326] - [INFO] - message sent: took 372,391
+21/09/2013 01:56:31.670] - [INFO] - message sent: took 358,614
+21/09/2013 01:56:32.016] - [INFO] - message sent: took 262,174
+21/09/2013 01:56:32.360] - [INFO] - message sent: took 361,856
+21/09/2013 01:56:32.708] - [INFO] - message sent: took 446,546
+21/09/2013 01:56:33.052] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:33.397] - [INFO] - message sent: took 367,529
+21/09/2013 01:56:33.741] - [INFO] - message sent: took 362,262
+21/09/2013 01:56:34.087] - [INFO] - message sent: took 365,909
+21/09/2013 01:56:34.431] - [INFO] - message sent: took 367,124
+21/09/2013 01:56:34.776] - [INFO] - message sent: took 359,830
+21/09/2013 01:56:35.121] - [INFO] - message sent: took 366,313
+21/09/2013 01:56:35.468] - [INFO] - message sent: took 366,314
+21/09/2013 01:56:35.812] - [INFO] - message sent: took 362,261
+21/09/2013 01:56:36.154] - [INFO] - message sent: took 367,123
+21/09/2013 01:56:36.498] - [INFO] - message sent: took 361,856
+21/09/2013 01:56:36.849] - [INFO] - message sent: took 365,097
+21/09/2013 01:56:37.199] - [INFO] - message sent: took 384,548
+21/09/2013 01:56:37.547] - [INFO] - message sent: took 379,280
+21/09/2013 01:56:37.891] - [INFO] - message sent: took 364,287
+21/09/2013 01:56:38.236] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:38.578] - [INFO] - message sent: took 359,425
+21/09/2013 01:56:38.925] - [INFO] - message sent: took 508,543
+21/09/2013 01:56:39.268] - [INFO] - message sent: took 363,072
+21/09/2013 01:56:39.614] - [INFO] - message sent: took 361,046
+21/09/2013 01:56:39.961] - [INFO] - message sent: took 527,183
+21/09/2013 01:56:40.305] - [INFO] - message sent: took 361,045
+21/09/2013 01:56:40.651] - [INFO] - message sent: took 361,451
+21/09/2013 01:56:40.999] - [INFO] - message sent: took 514,217
+21/09/2013 01:56:41.338] - [INFO] - message sent: took 255,690
+21/09/2013 01:56:41.680] - [INFO] - message sent: took 362,667
+21/09/2013 01:56:42.027] - [INFO] - message sent: took 361,045
+21/09/2013 01:56:42.373] - [INFO] - message sent: took 366,718
+21/09/2013 01:56:42.720] - [INFO] - message sent: took 387,385
+21/09/2013 01:56:43.062] - [INFO] - message sent: took 393,057
+21/09/2013 01:56:43.406] - [INFO] - message sent: took 1,683,664
+21/09/2013 01:56:43.752] - [INFO] - message sent: took 514,621
+21/09/2013 01:56:44.097] - [INFO] - message sent: took 360,236
+21/09/2013 01:56:44.442] - [INFO] - message sent: took 361,856
+21/09/2013 01:56:44.789] - [INFO] - message sent: took 366,719
+21/09/2013 01:56:45.132] - [INFO] - message sent: took 354,968
+21/09/2013 01:56:45.477] - [INFO] - message sent: took 372,392
+21/09/2013 01:56:45.822] - [INFO] - message sent: took 363,477
+21/09/2013 01:56:46.275] - [INFO] - message sent: took 358,614
+21/09/2013 01:56:46.623] - [INFO] - message sent: took 3,047,614
+21/09/2013 01:56:46.962] - [INFO] - message sent: took 358,209
+21/09/2013 01:56:47.309] - [INFO] - message sent: took 356,994
+21/09/2013 01:56:47.652] - [INFO] - message sent: took 359,019
+21/09/2013 01:56:47.995] - [INFO] - message sent: took 389,005
+21/09/2013 01:56:48.336] - [INFO] - message sent: took 570,136
+21/09/2013 01:56:48.682] - [INFO] - message sent: took 517,459
+21/09/2013 01:56:49.027] - [INFO] - message sent: took 367,530
+21/09/2013 01:56:49.372] - [INFO] - message sent: took 352,941
+21/09/2013 01:56:49.718] - [INFO] - message sent: took 353,752
+21/09/2013 01:56:50.061] - [INFO] - message sent: took 376,849
+21/09/2013 01:56:50.402] - [INFO] - message sent: took 352,941
+21/09/2013 01:56:50.855] - [INFO] - message sent: took 338,354
+21/09/2013 01:57:35.484] - [INFO] - [id: 0x6c99c9a6, /127.0.0.1:1929 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:57:35.486] - [INFO] - [id: 0x6c99c9a6, /127.0.0.1:1929 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:57:35.487] - [INFO] - [id: 0x6c99c9a6, /127.0.0.1:1929 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:58:03.528] - [INFO] - [id: 0x427442bd] OPEN
+21/09/2013 01:58:03.540] - [INFO] - [id: 0x427442bd, /127.0.0.1:1931 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1931
+21/09/2013 01:58:03.544] - [INFO] - [id: 0x427442bd, /127.0.0.1:1931 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:58:04.039] - [INFO] - message sent: took 8,390,360
+21/09/2013 01:58:04.404] - [INFO] - message sent: took 2,413,859
+21/09/2013 01:58:04.756] - [INFO] - message sent: took 2,459,649
+21/09/2013 01:58:05.219] - [INFO] - message sent: took 2,402,108
+21/09/2013 01:58:05.591] - [INFO] - message sent: took 5,082,599
+21/09/2013 01:58:19.218] - [INFO] - [id: 0x427442bd, /127.0.0.1:1931 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 01:58:19.223] - [INFO] - [id: 0x427442bd, /127.0.0.1:1931 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 01:58:19.225] - [INFO] - [id: 0x427442bd, /127.0.0.1:1931 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 01:58:50.801] - [INFO] - [id: 0x7bcf772a] OPEN
+21/09/2013 01:58:50.815] - [INFO] - [id: 0x7bcf772a, /127.0.0.1:1955 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1955
+21/09/2013 01:58:50.818] - [INFO] - [id: 0x7bcf772a, /127.0.0.1:1955 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 01:58:51.311] - [INFO] - message sent: took 4,738,978
+21/09/2013 01:58:51.682] - [INFO] - message sent: took 2,427,231
+21/09/2013 01:58:52.035] - [INFO] - message sent: took 2,156,549
+21/09/2013 02:00:17.191] - [INFO] - [id: 0x7bcf772a, /127.0.0.1:1955 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:00:17.194] - [INFO] - [id: 0x7bcf772a, /127.0.0.1:1955 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:00:17.197] - [INFO] - [id: 0x7bcf772a, /127.0.0.1:1955 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:00:27.184] - [INFO] - [id: 0x0cdf2e13] OPEN
+21/09/2013 02:00:27.196] - [INFO] - [id: 0x0cdf2e13, /127.0.0.1:1956 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1956
+21/09/2013 02:00:27.199] - [INFO] - [id: 0x0cdf2e13, /127.0.0.1:1956 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:00:27.691] - [INFO] - message sent: took 4,318,770
+21/09/2013 02:00:28.058] - [INFO] - message sent: took 2,451,545
+21/09/2013 02:00:28.420] - [INFO] - message sent: took 2,369,286
+21/09/2013 02:00:28.776] - [INFO] - message sent: took 3,482,814
+21/09/2013 02:00:29.138] - [INFO] - message sent: took 5,120,689
+21/09/2013 02:00:29.489] - [INFO] - message sent: took 1,215,642
+21/09/2013 02:00:29.836] - [INFO] - message sent: took 451,003
+21/09/2013 02:00:30.183] - [INFO] - message sent: took 378,470
+21/09/2013 02:00:30.525] - [INFO] - message sent: took 267,036
+21/09/2013 02:00:30.867] - [INFO] - message sent: took 355,778
+21/09/2013 02:00:31.214] - [INFO] - message sent: took 375,228
+21/09/2013 02:00:31.564] - [INFO] - message sent: took 288,107
+21/09/2013 02:00:31.914] - [INFO] - message sent: took 776,795
+21/09/2013 02:00:32.267] - [INFO] - message sent: took 623,624
+21/09/2013 02:00:32.616] - [INFO] - message sent: took 918,214
+21/09/2013 02:00:32.963] - [INFO] - message sent: took 707,098
+21/09/2013 02:00:33.311] - [INFO] - message sent: took 729,385
+21/09/2013 02:00:33.658] - [INFO] - message sent: took 787,331
+21/09/2013 02:00:34.005] - [INFO] - message sent: took 706,288
+21/09/2013 02:00:34.378] - [INFO] - message sent: took 811,239
+21/09/2013 02:00:34.727] - [INFO] - message sent: took 823,800
+21/09/2013 02:00:35.071] - [INFO] - message sent: took 695,752
+21/09/2013 02:00:35.542] - [INFO] - message sent: took 713,582
+21/09/2013 02:00:35.896] - [INFO] - message sent: took 712,366
+21/09/2013 02:00:36.239] - [INFO] - message sent: took 690,889
+21/09/2013 02:00:36.580] - [INFO] - message sent: took 717,229
+21/09/2013 02:00:36.930] - [INFO] - message sent: took 712,771
+21/09/2013 02:00:37.273] - [INFO] - message sent: took 698,589
+21/09/2013 02:00:37.617] - [INFO] - message sent: took 705,883
+21/09/2013 02:00:37.961] - [INFO] - message sent: took 699,400
+21/09/2013 02:00:38.304] - [INFO] - message sent: took 703,452
+21/09/2013 02:00:38.658] - [INFO] - message sent: took 5,933,143
+21/09/2013 02:00:39.005] - [INFO] - message sent: took 711,556
+21/09/2013 02:00:39.348] - [INFO] - message sent: took 703,856
+21/09/2013 02:00:39.697] - [INFO] - message sent: took 2,377,796
+21/09/2013 02:00:40.052] - [INFO] - message sent: took 684,001
+21/09/2013 02:00:40.405] - [INFO] - message sent: took 5,619,912
+21/09/2013 02:00:40.757] - [INFO] - message sent: took 709,530
+21/09/2013 02:00:41.100] - [INFO] - message sent: took 716,823
+21/09/2013 02:00:41.443] - [INFO] - message sent: took 708,314
+21/09/2013 02:00:41.790] - [INFO] - message sent: took 699,400
+21/09/2013 02:00:42.136] - [INFO] - message sent: took 1,095,294
+21/09/2013 02:00:42.478] - [INFO] - message sent: took 1,015,466
+21/09/2013 02:00:42.821] - [INFO] - [id: 0x0cdf2e13, /127.0.0.1:1956 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:00:42.823] - [INFO] - [id: 0x0cdf2e13, /127.0.0.1:1956 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:00:42.824] - [INFO] - [id: 0x0cdf2e13, /127.0.0.1:1956 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:03:14.914] - [INFO] - [id: 0x6010ebbc] OPEN
+21/09/2013 02:03:14.925] - [INFO] - [id: 0x6010ebbc, /127.0.0.1:1957 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1957
+21/09/2013 02:03:14.927] - [INFO] - [id: 0x6010ebbc, /127.0.0.1:1957 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:03:15.425] - [SEVERE] - Exception thrown in getMove on turn 1
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:97)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:03:57.708] - [INFO] - [id: 0xd05ed78f] OPEN
+21/09/2013 02:03:57.720] - [INFO] - [id: 0xd05ed78f, /127.0.0.1:1958 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1958
+21/09/2013 02:03:57.722] - [INFO] - [id: 0xd05ed78f, /127.0.0.1:1958 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:03:58.219] - [INFO] - message sent: took 6,771,936
+21/09/2013 02:03:58.580] - [INFO] - message sent: took 2,488,419
+21/09/2013 02:03:58.934] - [SEVERE] - Exception thrown in getMove on turn 3
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:97)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:04:28.833] - [INFO] - [id: 0x5efe66fd] OPEN
+21/09/2013 02:04:28.870] - [INFO] - [id: 0x5efe66fd, /127.0.0.1:1959 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1959
+21/09/2013 02:04:28.872] - [INFO] - [id: 0x5efe66fd, /127.0.0.1:1959 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:04:29.859] - [INFO] - message sent: took 4,542,854
+21/09/2013 02:04:30.227] - [INFO] - message sent: took 2,444,251
+21/09/2013 02:04:30.707] - [INFO] - message sent: took 1,511,448
+21/09/2013 02:04:31.057] - [INFO] - message sent: took 1,446,208
+21/09/2013 02:04:31.557] - [INFO] - message sent: took 1,972,581
+21/09/2013 02:04:31.918] - [INFO] - message sent: took 1,269,535
+21/09/2013 02:04:32.266] - [INFO] - message sent: took 462,349
+21/09/2013 02:04:32.618] - [INFO] - message sent: took 381,306
+21/09/2013 02:04:32.968] - [INFO] - message sent: took 343,621
+21/09/2013 02:05:30.137] - [INFO] - [id: 0x5efe66fd, /127.0.0.1:1959 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:05:30.140] - [INFO] - [id: 0x5efe66fd, /127.0.0.1:1959 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:05:30.141] - [INFO] - [id: 0x5efe66fd, /127.0.0.1:1959 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:05:38.803] - [INFO] - [id: 0x0c3c58ea] OPEN
+21/09/2013 02:05:38.814] - [INFO] - [id: 0x0c3c58ea, /127.0.0.1:1960 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1960
+21/09/2013 02:05:38.817] - [INFO] - [id: 0x0c3c58ea, /127.0.0.1:1960 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:05:39.321] - [INFO] - message sent: took 6,407,648
+21/09/2013 02:05:39.679] - [INFO] - message sent: took 2,445,061
+21/09/2013 02:05:40.033] - [INFO] - message sent: took 2,255,015
+21/09/2013 02:05:40.382] - [INFO] - message sent: took 1,506,991
+21/09/2013 02:05:40.859] - [INFO] - message sent: took 6,127,646
+21/09/2013 02:05:58.351] - [INFO] - [id: 0x0c3c58ea, /127.0.0.1:1960 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:05:58.353] - [INFO] - [id: 0x0c3c58ea, /127.0.0.1:1960 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:05:58.355] - [INFO] - [id: 0x0c3c58ea, /127.0.0.1:1960 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:06:07.560] - [INFO] - [id: 0xd2f5e329] OPEN
+21/09/2013 02:06:07.575] - [INFO] - [id: 0xd2f5e329, /127.0.0.1:1961 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1961
+21/09/2013 02:06:07.578] - [INFO] - [id: 0xd2f5e329, /127.0.0.1:1961 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:06:08.076] - [INFO] - message sent: took 4,046,062
+21/09/2013 02:06:08.442] - [INFO] - message sent: took 3,882,355
+21/09/2013 02:06:08.803] - [INFO] - message sent: took 2,001,352
+21/09/2013 02:06:09.165] - [INFO] - message sent: took 2,474,642
+21/09/2013 02:06:09.548] - [INFO] - message sent: took 2,805,702
+21/09/2013 02:06:09.904] - [INFO] - message sent: took 601,743
+21/09/2013 02:06:10.294] - [INFO] - message sent: took 429,932
+21/09/2013 02:06:10.644] - [INFO] - message sent: took 304,721
+21/09/2013 02:06:10.987] - [INFO] - message sent: took 337,544
+21/09/2013 02:06:11.331] - [INFO] - message sent: took 379,686
+21/09/2013 02:06:11.677] - [INFO] - message sent: took 266,225
+21/09/2013 02:06:12.019] - [INFO] - message sent: took 319,714
+21/09/2013 02:06:30.782] - [INFO] - [id: 0xd2f5e329, /127.0.0.1:1961 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:06:30.788] - [INFO] - [id: 0xd2f5e329, /127.0.0.1:1961 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:06:30.789] - [INFO] - [id: 0xd2f5e329, /127.0.0.1:1961 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:06:36.938] - [INFO] - [id: 0x2b69d6a8] OPEN
+21/09/2013 02:06:36.950] - [INFO] - [id: 0x2b69d6a8, /127.0.0.1:1962 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1962
+21/09/2013 02:06:36.952] - [INFO] - [id: 0x2b69d6a8, /127.0.0.1:1962 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:06:37.443] - [INFO] - message sent: took 4,575,271
+21/09/2013 02:06:37.809] - [INFO] - message sent: took 2,022,828
+21/09/2013 02:06:38.153] - [INFO] - message sent: took 2,054,435
+21/09/2013 02:06:38.503] - [INFO] - message sent: took 3,947,190
+21/09/2013 02:06:38.995] - [INFO] - message sent: took 5,741,882
+21/09/2013 02:06:39.352] - [INFO] - message sent: took 842,035
+21/09/2013 02:06:39.694] - [INFO] - message sent: took 437,226
+21/09/2013 02:06:40.035] - [INFO] - message sent: took 304,721
+21/09/2013 02:06:40.382] - [INFO] - message sent: took 283,649
+21/09/2013 02:06:40.727] - [INFO] - message sent: took 344,027
+21/09/2013 02:06:57.076] - [INFO] - [id: 0x2b69d6a8, /127.0.0.1:1962 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:06:57.078] - [INFO] - [id: 0x2b69d6a8, /127.0.0.1:1962 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:06:57.080] - [INFO] - [id: 0x2b69d6a8, /127.0.0.1:1962 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:07:03.956] - [INFO] - [id: 0x5f3a5eae] OPEN
+21/09/2013 02:07:03.967] - [INFO] - [id: 0x5f3a5eae, /127.0.0.1:1963 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1963
+21/09/2013 02:07:03.969] - [INFO] - [id: 0x5f3a5eae, /127.0.0.1:1963 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:07:04.962] - [SEVERE] - Exception thrown in getMove on turn 1
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:96)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:07:28.259] - [INFO] - [id: 0x7fc5de90] OPEN
+21/09/2013 02:07:28.271] - [INFO] - [id: 0x7fc5de90, /127.0.0.1:1971 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1971
+21/09/2013 02:07:28.273] - [INFO] - [id: 0x7fc5de90, /127.0.0.1:1971 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:07:28.777] - [INFO] - message sent: took 6,283,653
+21/09/2013 02:07:29.146] - [INFO] - message sent: took 3,270,887
+21/09/2013 02:07:29.501] - [INFO] - message sent: took 1,878,572
+21/09/2013 02:07:29.862] - [INFO] - message sent: took 3,584,928
+21/09/2013 02:07:30.347] - [INFO] - message sent: took 1,327,481
+21/09/2013 02:07:30.704] - [INFO] - message sent: took 1,470,522
+21/09/2013 02:07:31.044] - [INFO] - message sent: took 346,863
+21/09/2013 02:07:31.386] - [INFO] - message sent: took 354,967
+21/09/2013 02:07:39.933] - [INFO] - [id: 0x7fc5de90, /127.0.0.1:1971 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:07:39.937] - [INFO] - [id: 0x7fc5de90, /127.0.0.1:1971 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:07:39.939] - [INFO] - [id: 0x7fc5de90, /127.0.0.1:1971 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:08:25.170] - [INFO] - [id: 0x47ffd28d] OPEN
+21/09/2013 02:08:25.182] - [INFO] - [id: 0x47ffd28d, /127.0.0.1:1978 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1978
+21/09/2013 02:08:25.184] - [INFO] - [id: 0x47ffd28d, /127.0.0.1:1978 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:08:25.675] - [INFO] - message sent: took 4,913,624
+21/09/2013 02:08:26.036] - [INFO] - message sent: took 3,187,818
+21/09/2013 02:08:26.393] - [INFO] - message sent: took 2,445,872
+21/09/2013 02:08:26.744] - [INFO] - message sent: took 1,933,276
+21/09/2013 02:08:27.220] - [INFO] - message sent: took 6,613,903
+21/09/2013 02:08:27.583] - [INFO] - message sent: took 1,083,542
+21/09/2013 02:08:27.926] - [INFO] - message sent: took 449,788
+21/09/2013 02:08:28.271] - [INFO] - message sent: took 395,489
+21/09/2013 02:08:28.620] - [INFO] - message sent: took 3,430,947
+21/09/2013 02:08:28.965] - [INFO] - message sent: took 382,522
+21/09/2013 02:08:29.308] - [INFO] - message sent: took 389,411
+21/09/2013 02:08:29.650] - [INFO] - message sent: took 380,090
+21/09/2013 02:08:29.994] - [INFO] - message sent: took 365,503
+21/09/2013 02:08:50.155] - [INFO] - [id: 0x47ffd28d, /127.0.0.1:1978 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:08:50.156] - [INFO] - [id: 0x47ffd28d, /127.0.0.1:1978 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:08:50.158] - [INFO] - [id: 0x47ffd28d, /127.0.0.1:1978 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:12:27.569] - [INFO] - [id: 0x4c8b4c7f] OPEN
+21/09/2013 02:12:27.582] - [INFO] - [id: 0x4c8b4c7f, /127.0.0.1:2122 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2122
+21/09/2013 02:12:27.584] - [INFO] - [id: 0x4c8b4c7f, /127.0.0.1:2122 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:12:28.072] - [INFO] - message sent: took 5,057,476
+21/09/2013 02:12:28.423] - [INFO] - message sent: took 3,056,123
+21/09/2013 02:12:28.791] - [INFO] - message sent: took 1,605,863
+21/09/2013 02:12:43.122] - [INFO] - [id: 0x4c8b4c7f, /127.0.0.1:2122 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:12:43.131] - [INFO] - [id: 0x4c8b4c7f, /127.0.0.1:2122 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:12:43.137] - [INFO] - [id: 0x4c8b4c7f, /127.0.0.1:2122 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:18:37.722] - [INFO] - [id: 0x191a4aea] OPEN
+21/09/2013 02:18:37.733] - [INFO] - [id: 0x191a4aea, /127.0.0.1:2129 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2129
+21/09/2013 02:18:37.735] - [INFO] - [id: 0x191a4aea, /127.0.0.1:2129 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:18:38.238] - [INFO] - message sent: took 6,890,664
+21/09/2013 02:18:38.604] - [INFO] - message sent: took 2,162,627
+21/09/2013 02:18:38.967] - [INFO] - message sent: took 1,891,944
+21/09/2013 02:18:39.326] - [INFO] - message sent: took 2,222,599
+21/09/2013 02:18:39.798] - [INFO] - message sent: took 1,285,339
+21/09/2013 02:18:40.168] - [INFO] - message sent: took 703,857
+21/09/2013 02:18:40.522] - [INFO] - message sent: took 429,527
+21/09/2013 02:18:40.873] - [INFO] - message sent: took 369,960
+21/09/2013 02:18:41.227] - [INFO] - message sent: took 362,667
+21/09/2013 02:18:41.576] - [INFO] - message sent: took 383,332
+21/09/2013 02:18:41.931] - [INFO] - message sent: took 399,136
+21/09/2013 02:18:42.285] - [INFO] - message sent: took 393,057
+21/09/2013 02:18:42.634] - [INFO] - message sent: took 399,541
+21/09/2013 02:18:42.987] - [INFO] - message sent: took 393,463
+21/09/2013 02:18:43.334] - [INFO] - message sent: took 374,418
+21/09/2013 02:18:43.686] - [INFO] - message sent: took 369,960
+21/09/2013 02:18:44.267] - [INFO] - message sent: took 395,489
+21/09/2013 02:18:44.617] - [INFO] - message sent: took 395,489
+21/09/2013 02:18:44.971] - [INFO] - message sent: took 388,195
+21/09/2013 02:18:45.319] - [INFO] - message sent: took 392,247
+21/09/2013 02:18:45.684] - [INFO] - message sent: took 359,425
+21/09/2013 02:18:59.629] - [INFO] - [id: 0x191a4aea, /127.0.0.1:2129 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:18:59.637] - [INFO] - [id: 0x191a4aea, /127.0.0.1:2129 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:18:59.639] - [INFO] - [id: 0x191a4aea, /127.0.0.1:2129 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:21:20.679] - [INFO] - [id: 0x3c7d5bde] OPEN
+21/09/2013 02:21:20.691] - [INFO] - [id: 0x3c7d5bde, /127.0.0.1:2169 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2169
+21/09/2013 02:21:20.693] - [INFO] - [id: 0x3c7d5bde, /127.0.0.1:2169 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:21:21.182] - [INFO] - message sent: took 5,845,617
+21/09/2013 02:21:21.550] - [INFO] - message sent: took 1,895,996
+21/09/2013 02:21:21.913] - [INFO] - message sent: took 1,883,434
+21/09/2013 02:21:22.284] - [INFO] - message sent: took 4,054,571
+21/09/2013 02:21:22.640] - [INFO] - message sent: took 1,188,898
+21/09/2013 02:21:23.006] - [INFO] - message sent: took 1,318,566
+21/09/2013 02:21:23.358] - [INFO] - message sent: took 486,257
+21/09/2013 02:21:23.712] - [INFO] - message sent: took 384,953
+21/09/2013 02:21:28.524] - [INFO] - [id: 0x3c7d5bde, /127.0.0.1:2169 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:21:28.526] - [INFO] - [id: 0x3c7d5bde, /127.0.0.1:2169 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:21:28.528] - [INFO] - [id: 0x3c7d5bde, /127.0.0.1:2169 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:23:48.272] - [INFO] - [id: 0x632cbefc] OPEN
+21/09/2013 02:23:48.284] - [INFO] - [id: 0x632cbefc, /127.0.0.1:2170 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2170
+21/09/2013 02:23:48.286] - [INFO] - [id: 0x632cbefc, /127.0.0.1:2170 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:23:48.804] - [INFO] - message sent: took 11,984,203
+21/09/2013 02:23:49.173] - [INFO] - message sent: took 2,092,525
+21/09/2013 02:23:49.532] - [INFO] - message sent: took 3,020,465
+21/09/2013 02:23:49.909] - [INFO] - message sent: took 4,128,726
+21/09/2013 02:23:50.266] - [INFO] - message sent: took 1,784,157
+21/09/2013 02:23:50.633] - [INFO] - message sent: took 719,660
+21/09/2013 02:23:50.981] - [INFO] - message sent: took 486,662
+21/09/2013 02:23:51.330] - [INFO] - message sent: took 371,987
+21/09/2013 02:23:58.234] - [INFO] - [id: 0x632cbefc, /127.0.0.1:2170 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:23:58.239] - [INFO] - [id: 0x632cbefc, /127.0.0.1:2170 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:23:58.241] - [INFO] - [id: 0x632cbefc, /127.0.0.1:2170 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:26:26.123] - [INFO] - [id: 0xc5c7b06b] OPEN
+21/09/2013 02:26:26.135] - [INFO] - [id: 0xc5c7b06b, /127.0.0.1:2171 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2171
+21/09/2013 02:26:26.137] - [INFO] - [id: 0xc5c7b06b, /127.0.0.1:2171 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:26:26.639] - [INFO] - message sent: took 5,838,323
+21/09/2013 02:26:27.012] - [INFO] - message sent: took 2,087,662
+21/09/2013 02:26:27.365] - [INFO] - message sent: took 2,068,212
+21/09/2013 02:26:34.776] - [INFO] - [id: 0xc5c7b06b, /127.0.0.1:2171 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:26:34.780] - [INFO] - [id: 0xc5c7b06b, /127.0.0.1:2171 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:26:34.782] - [INFO] - [id: 0xc5c7b06b, /127.0.0.1:2171 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:27:13.072] - [INFO] - [id: 0x4c6256f5] OPEN
+21/09/2013 02:27:13.084] - [INFO] - [id: 0x4c6256f5, /127.0.0.1:2180 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2180
+21/09/2013 02:27:13.086] - [INFO] - [id: 0x4c6256f5, /127.0.0.1:2180 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:27:13.581] - [INFO] - message sent: took 7,292,636
+21/09/2013 02:27:13.942] - [INFO] - message sent: took 2,845,818
+21/09/2013 02:27:14.298] - [INFO] - message sent: took 3,808,201
+21/09/2013 02:27:14.653] - [INFO] - message sent: took 6,554,741
+21/09/2013 02:27:15.024] - [INFO] - message sent: took 12,805,572
+21/09/2013 02:27:15.378] - [INFO] - message sent: took 1,696,226
+21/09/2013 02:27:15.729] - [INFO] - message sent: took 1,180,389
+21/09/2013 02:27:16.076] - [INFO] - message sent: took 621,193
+21/09/2013 02:27:16.422] - [INFO] - message sent: took 686,433
+21/09/2013 02:27:16.771] - [INFO] - message sent: took 639,428
+21/09/2013 02:27:17.113] - [INFO] - message sent: took 628,487
+21/09/2013 02:27:17.458] - [INFO] - message sent: took 636,996
+21/09/2013 02:27:17.804] - [INFO] - message sent: took 1,018,708
+21/09/2013 02:27:18.199] - [INFO] - message sent: took 649,153
+21/09/2013 02:27:18.551] - [INFO] - message sent: took 1,969,340
+21/09/2013 02:27:18.901] - [INFO] - message sent: took 636,997
+21/09/2013 02:27:19.245] - [INFO] - message sent: took 626,056
+21/09/2013 02:27:19.596] - [INFO] - message sent: took 543,798
+21/09/2013 02:27:19.939] - [INFO] - message sent: took 2,520,025
+21/09/2013 02:27:20.289] - [INFO] - message sent: took 487,473
+21/09/2013 02:28:16.544] - [INFO] - [id: 0x31651d95] OPEN
+21/09/2013 02:28:17.559] - [INFO] - [id: 0x31651d95] CLOSED
+21/09/2013 02:28:17.614] - [SEVERE] - Unexptected exception from upstream.
+java.nio.channels.ClosedChannelException
+	at org.jboss.netty.channel.socket.oio.OioWorker.write(OioWorker.java:83)
+	at org.jboss.netty.channel.socket.oio.OioClientSocketPipelineSink.eventSunk(OioClientSocketPipelineSink.java:79)
+	at org.jboss.netty.channel.Channels.write(Channels.java:725)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.Channels.write(Channels.java:725)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at Client.run(Client.java:46)
+	at RunClient.main(RunClient.java:38)
+
+21/09/2013 02:28:20.802] - [INFO] - [id: 0x6d3b7f82] OPEN
+21/09/2013 02:28:20.814] - [INFO] - [id: 0x6d3b7f82, /127.0.0.1:2198 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2198
+21/09/2013 02:28:20.816] - [INFO] - [id: 0x6d3b7f82, /127.0.0.1:2198 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:28:21.304] - [INFO] - message sent: took 8,113,194
+21/09/2013 02:28:21.671] - [INFO] - message sent: took 3,573,177
+21/09/2013 02:28:22.023] - [INFO] - message sent: took 3,579,660
+21/09/2013 02:28:22.389] - [INFO] - message sent: took 4,374,285
+21/09/2013 02:28:22.752] - [INFO] - message sent: took 12,305,133
+21/09/2013 02:28:23.106] - [INFO] - message sent: took 2,269,604
+21/09/2013 02:28:23.454] - [INFO] - message sent: took 595,260
+21/09/2013 02:28:23.803] - [INFO] - message sent: took 2,152,496
+21/09/2013 02:28:24.198] - [INFO] - message sent: took 1,846,965
+21/09/2013 02:28:24.541] - [INFO] - message sent: took 652,799
+21/09/2013 02:28:24.890] - [INFO] - message sent: took 650,368
+21/09/2013 02:28:25.238] - [INFO] - message sent: took 654,825
+21/09/2013 02:28:25.591] - [INFO] - message sent: took 619,977
+21/09/2013 02:28:25.941] - [INFO] - message sent: took 1,457,960
+21/09/2013 02:28:26.310] - [INFO] - message sent: took 1,403,661
+21/09/2013 02:28:26.783] - [INFO] - message sent: took 634,970
+21/09/2013 02:28:27.134] - [INFO] - message sent: took 3,505,911
+21/09/2013 02:28:27.485] - [INFO] - message sent: took 1,564,936
+21/09/2013 02:28:27.721] - [INFO] - [id: 0x6d3b7f82, /127.0.0.1:2198 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:28:27.725] - [INFO] - [id: 0x6d3b7f82, /127.0.0.1:2198 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:28:27.729] - [INFO] - [id: 0x6d3b7f82, /127.0.0.1:2198 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:29:16.359] - [INFO] - [id: 0xf0cef0cc] OPEN
+21/09/2013 02:29:16.371] - [INFO] - [id: 0xf0cef0cc, /127.0.0.1:2201 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2201
+21/09/2013 02:29:16.374] - [INFO] - [id: 0xf0cef0cc, /127.0.0.1:2201 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:29:17.361] - [INFO] - message sent: took 6,496,795
+21/09/2013 02:29:17.734] - [INFO] - message sent: took 8,492,069
+21/09/2013 02:29:18.096] - [INFO] - message sent: took 2,635,512
+21/09/2013 02:29:18.468] - [INFO] - message sent: took 6,213,551
+21/09/2013 02:29:18.858] - [INFO] - message sent: took 31,298,322
+21/09/2013 02:29:19.202] - [INFO] - message sent: took 705,072
+21/09/2013 02:29:19.552] - [INFO] - message sent: took 610,658
+21/09/2013 02:29:19.902] - [INFO] - message sent: took 580,266
+21/09/2013 02:29:20.251] - [INFO] - message sent: took 566,894
+21/09/2013 02:29:20.596] - [INFO] - message sent: took 1,884,245
+21/09/2013 02:29:20.943] - [INFO] - message sent: took 553,927
+21/09/2013 02:29:21.296] - [INFO] - message sent: took 571,757
+21/09/2013 02:29:21.642] - [INFO] - message sent: took 592,828
+21/09/2013 02:29:21.992] - [INFO] - message sent: took 554,738
+21/09/2013 02:29:22.464] - [INFO] - message sent: took 577,835
+21/09/2013 02:29:22.814] - [INFO] - message sent: took 554,738
+21/09/2013 02:29:23.167] - [INFO] - message sent: took 545,418
+21/09/2013 02:29:23.526] - [INFO] - message sent: took 1,778,484
+21/09/2013 02:29:23.876] - [INFO] - message sent: took 4,023,775
+21/09/2013 02:29:24.226] - [INFO] - message sent: took 1,112,312
+21/09/2013 02:29:24.597] - [INFO] - message sent: took 560,411
+21/09/2013 02:29:24.948] - [INFO] - message sent: took 3,905,047
+21/09/2013 02:29:25.308] - [INFO] - message sent: took 569,326
+21/09/2013 02:29:25.655] - [INFO] - message sent: took 569,731
+21/09/2013 02:29:26.007] - [INFO] - message sent: took 571,757
+21/09/2013 02:29:26.362] - [INFO] - message sent: took 567,300
+21/09/2013 02:29:26.718] - [INFO] - message sent: took 897,954
+21/09/2013 02:29:27.059] - [INFO] - message sent: took 595,665
+21/09/2013 02:29:27.513] - [INFO] - message sent: took 540,151
+21/09/2013 02:29:27.856] - [INFO] - message sent: took 552,712
+21/09/2013 02:29:28.201] - [INFO] - message sent: took 1,147,971
+21/09/2013 02:29:28.546] - [INFO] - message sent: took 549,065
+21/09/2013 02:29:28.891] - [INFO] - message sent: took 630,918
+21/09/2013 02:29:29.239] - [INFO] - message sent: took 541,771
+21/09/2013 02:29:29.593] - [INFO] - message sent: took 598,501
+21/09/2013 02:29:29.940] - [INFO] - message sent: took 780,037
+21/09/2013 02:29:30.287] - [INFO] - message sent: took 571,352
+21/09/2013 02:29:30.635] - [INFO] - message sent: took 566,084
+21/09/2013 02:29:30.980] - [INFO] - message sent: took 560,411
+21/09/2013 02:29:31.329] - [INFO] - message sent: took 552,712
+21/09/2013 02:29:31.675] - [INFO] - message sent: took 554,738
+21/09/2013 02:29:32.020] - [INFO] - message sent: took 552,712
+21/09/2013 02:29:32.367] - [INFO] - message sent: took 576,214
+21/09/2013 02:29:32.715] - [INFO] - message sent: took 1,092,457
+21/09/2013 02:29:33.063] - [INFO] - message sent: took 671,034
+21/09/2013 02:29:33.409] - [INFO] - message sent: took 568,516
+21/09/2013 02:29:33.754] - [INFO] - message sent: took 553,522
+21/09/2013 02:29:34.105] - [INFO] - message sent: took 542,987
+21/09/2013 02:29:34.568] - [INFO] - message sent: took 722,902
+21/09/2013 02:29:34.915] - [INFO] - message sent: took 575,403
+21/09/2013 02:29:35.262] - [INFO] - message sent: took 538,529
+21/09/2013 02:29:35.722] - [INFO] - message sent: took 568,515
+21/09/2013 02:29:36.070] - [INFO] - message sent: took 525,968
+21/09/2013 02:29:36.413] - [INFO] - message sent: took 535,288
+21/09/2013 02:29:36.759] - [INFO] - message sent: took 540,960
+21/09/2013 02:29:37.106] - [INFO] - message sent: took 607,821
+21/09/2013 02:29:37.449] - [INFO] - message sent: took 564,868
+21/09/2013 02:29:37.801] - [INFO] - message sent: took 785,710
+21/09/2013 02:29:38.143] - [INFO] - message sent: took 549,876
+21/09/2013 02:29:38.490] - [INFO] - message sent: took 587,560
+21/09/2013 02:29:38.838] - [INFO] - message sent: took 2,327,954
+21/09/2013 02:29:39.184] - [INFO] - message sent: took 568,110
+21/09/2013 02:29:39.530] - [INFO] - message sent: took 577,025
+21/09/2013 02:29:39.880] - [INFO] - message sent: took 3,039,915
+21/09/2013 02:29:40.224] - [INFO] - message sent: took 1,331,533
+21/09/2013 02:29:40.567] - [INFO] - message sent: took 566,894
+21/09/2013 02:29:40.918] - [INFO] - message sent: took 797,867
+21/09/2013 02:29:41.262] - [INFO] - message sent: took 574,189
+21/09/2013 02:29:41.606] - [INFO] - message sent: took 612,684
+21/09/2013 02:29:41.951] - [INFO] - message sent: took 562,843
+21/09/2013 02:29:42.303] - [INFO] - message sent: took 583,508
+21/09/2013 02:29:42.651] - [INFO] - message sent: took 573,783
+21/09/2013 02:29:42.997] - [INFO] - message sent: took 593,639
+21/09/2013 02:29:43.340] - [INFO] - message sent: took 543,392
+21/09/2013 02:29:43.689] - [INFO] - message sent: took 551,091
+21/09/2013 02:29:44.034] - [INFO] - message sent: took 559,195
+21/09/2013 02:29:44.381] - [INFO] - message sent: took 565,679
+21/09/2013 02:29:44.731] - [INFO] - message sent: took 563,653
+21/09/2013 02:29:45.072] - [INFO] - message sent: took 725,333
+21/09/2013 02:29:45.418] - [INFO] - message sent: took 879,719
+21/09/2013 02:29:45.760] - [INFO] - message sent: took 735,868
+21/09/2013 02:29:46.104] - [INFO] - message sent: took 573,377
+21/09/2013 02:29:46.449] - [INFO] - message sent: took 580,266
+21/09/2013 02:29:46.795] - [INFO] - message sent: took 696,562
+21/09/2013 02:29:47.142] - [INFO] - message sent: took 2,298,374
+21/09/2013 02:29:47.492] - [INFO] - message sent: took 552,306
+21/09/2013 02:29:47.952] - [INFO] - message sent: took 563,247
+21/09/2013 02:29:48.302] - [INFO] - message sent: took 1,555,616
+21/09/2013 02:29:48.650] - [INFO] - message sent: took 537,314
+21/09/2013 02:29:49.109] - [INFO] - message sent: took 578,646
+21/09/2013 02:29:49.454] - [INFO] - message sent: took 555,143
+21/09/2013 02:29:49.801] - [INFO] - message sent: took 571,757
+21/09/2013 02:29:50.280] - [INFO] - message sent: took 2,506,653
+21/09/2013 02:29:50.624] - [INFO] - message sent: took 560,005
+21/09/2013 02:29:50.970] - [INFO] - message sent: took 827,446
+21/09/2013 02:29:51.317] - [INFO] - message sent: took 622,409
+21/09/2013 02:29:51.778] - [INFO] - message sent: took 533,666
+21/09/2013 02:29:52.126] - [INFO] - message sent: took 2,765,180
+21/09/2013 02:29:52.470] - [INFO] - message sent: took 513,407
+21/09/2013 02:29:52.818] - [INFO] - message sent: took 712,367
+21/09/2013 02:29:53.166] - [INFO] - message sent: took 507,733
+21/09/2013 02:29:53.518] - [INFO] - message sent: took 549,065
+21/09/2013 02:29:53.867] - [INFO] - message sent: took 565,678
+21/09/2013 02:29:54.211] - [INFO] - message sent: took 1,201,459
+21/09/2013 02:29:54.555] - [INFO] - message sent: took 555,954
+21/09/2013 02:29:54.911] - [INFO] - message sent: took 443,304
+21/09/2013 02:29:55.260] - [INFO] - message sent: took 899,980
+21/09/2013 02:29:55.604] - [INFO] - message sent: took 891,876
+21/09/2013 02:29:55.946] - [INFO] - message sent: took 572,567
+21/09/2013 02:29:56.292] - [INFO] - message sent: took 542,177
+21/09/2013 02:29:56.637] - [INFO] - message sent: took 560,006
+21/09/2013 02:29:56.981] - [INFO] - message sent: took 552,306
+21/09/2013 02:29:57.324] - [INFO] - message sent: took 548,660
+21/09/2013 02:29:57.671] - [INFO] - message sent: took 560,006
+21/09/2013 02:29:58.016] - [INFO] - message sent: took 561,626
+21/09/2013 02:29:58.363] - [INFO] - message sent: took 1,123,253
+21/09/2013 02:29:58.709] - [INFO] - message sent: took 547,444
+21/09/2013 02:29:59.055] - [INFO] - message sent: took 551,496
+21/09/2013 02:29:59.401] - [INFO] - message sent: took 559,195
+21/09/2013 02:29:59.763] - [INFO] - message sent: took 631,728
+21/09/2013 02:30:00.106] - [INFO] - message sent: took 605,390
+21/09/2013 02:30:00.452] - [INFO] - message sent: took 2,015,939
+21/09/2013 02:30:00.800] - [INFO] - message sent: took 625,650
+21/09/2013 02:30:01.142] - [INFO] - message sent: took 546,229
+21/09/2013 02:30:01.487] - [INFO] - message sent: took 557,979
+21/09/2013 02:30:01.841] - [INFO] - message sent: took 622,409
+21/09/2013 02:30:02.209] - [INFO] - message sent: took 1,844,129
+21/09/2013 02:30:02.554] - [INFO] - message sent: took 580,266
+21/09/2013 02:30:02.908] - [INFO] - message sent: took 607,011
+21/09/2013 02:30:03.253] - [INFO] - message sent: took 567,705
+21/09/2013 02:30:03.612] - [INFO] - message sent: took 13,925,178
+21/09/2013 02:30:03.958] - [INFO] - message sent: took 557,979
+21/09/2013 02:30:04.303] - [INFO] - message sent: took 552,712
+21/09/2013 02:30:04.649] - [INFO] - message sent: took 547,849
+21/09/2013 02:30:04.995] - [INFO] - message sent: took 557,575
+21/09/2013 02:30:05.340] - [INFO] - message sent: took 542,582
+21/09/2013 02:30:05.683] - [INFO] - message sent: took 540,150
+21/09/2013 02:30:06.026] - [INFO] - message sent: took 539,745
+21/09/2013 02:30:06.370] - [INFO] - message sent: took 546,229
+21/09/2013 02:30:06.715] - [INFO] - message sent: took 542,581
+21/09/2013 02:30:07.065] - [INFO] - message sent: took 545,013
+21/09/2013 02:30:07.409] - [INFO] - message sent: took 541,771
+21/09/2013 02:30:07.754] - [INFO] - message sent: took 540,151
+21/09/2013 02:30:08.098] - [INFO] - message sent: took 556,358
+21/09/2013 02:30:08.443] - [INFO] - message sent: took 519,079
+21/09/2013 02:30:08.789] - [INFO] - message sent: took 558,790
+21/09/2013 02:30:09.134] - [INFO] - message sent: took 798,272
+21/09/2013 02:30:09.480] - [INFO] - message sent: took 414,129
+21/09/2013 02:30:09.822] - [INFO] - message sent: took 710,341
+21/09/2013 02:30:10.166] - [INFO] - message sent: took 551,901
+21/09/2013 02:30:10.511] - [INFO] - message sent: took 538,935
+21/09/2013 02:30:10.855] - [INFO] - message sent: took 561,626
+21/09/2013 02:30:11.202] - [INFO] - message sent: took 989,128
+21/09/2013 02:30:11.547] - [INFO] - message sent: took 536,503
+21/09/2013 02:30:11.890] - [INFO] - message sent: took 1,096,914
+21/09/2013 02:30:12.235] - [INFO] - message sent: took 539,745
+21/09/2013 02:30:12.580] - [INFO] - message sent: took 526,778
+21/09/2013 02:30:12.926] - [INFO] - message sent: took 544,202
+21/09/2013 02:30:13.268] - [INFO] - message sent: took 390,627
+21/09/2013 02:30:13.750] - [INFO] - message sent: took 541,771
+21/09/2013 02:30:14.095] - [INFO] - message sent: took 547,039
+21/09/2013 02:30:14.441] - [INFO] - message sent: took 383,333
+21/09/2013 02:30:14.769] - [INFO] - [id: 0xf0cef0cc, /127.0.0.1:2201 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:30:14.770] - [INFO] - [id: 0xf0cef0cc, /127.0.0.1:2201 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:30:14.771] - [INFO] - [id: 0xf0cef0cc, /127.0.0.1:2201 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:32:28.152] - [INFO] - [id: 0xadb59b9e] OPEN
+21/09/2013 02:32:28.163] - [INFO] - [id: 0xadb59b9e, /127.0.0.1:2202 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2202
+21/09/2013 02:32:28.165] - [INFO] - [id: 0xadb59b9e, /127.0.0.1:2202 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:32:28.678] - [INFO] - message sent: took 9,129,471
+21/09/2013 02:32:29.048] - [INFO] - message sent: took 7,114,747
+21/09/2013 02:32:29.413] - [INFO] - message sent: took 2,949,147
+21/09/2013 02:32:29.770] - [INFO] - message sent: took 5,618,697
+21/09/2013 02:32:30.136] - [INFO] - message sent: took 14,672,797
+21/09/2013 02:32:30.483] - [INFO] - message sent: took 951,037
+21/09/2013 02:32:30.836] - [INFO] - message sent: took 553,522
+21/09/2013 02:32:31.188] - [INFO] - message sent: took 1,703,519
+21/09/2013 02:32:31.537] - [INFO] - message sent: took 708,314
+21/09/2013 02:32:31.901] - [INFO] - message sent: took 503,276
+21/09/2013 02:32:32.248] - [INFO] - message sent: took 517,053
+21/09/2013 02:32:32.594] - [INFO] - message sent: took 542,177
+21/09/2013 02:32:32.941] - [INFO] - message sent: took 536,098
+21/09/2013 02:32:33.286] - [INFO] - message sent: took 572,972
+21/09/2013 02:32:33.632] - [INFO] - message sent: took 555,954
+21/09/2013 02:32:33.980] - [INFO] - message sent: took 552,712
+21/09/2013 02:32:34.326] - [INFO] - message sent: took 570,946
+21/09/2013 02:32:34.672] - [INFO] - message sent: took 707,098
+21/09/2013 02:32:35.018] - [INFO] - message sent: took 1,685,285
+21/09/2013 02:32:35.362] - [INFO] - message sent: took 629,702
+21/09/2013 02:32:35.715] - [INFO] - message sent: took 650,368
+21/09/2013 02:32:36.063] - [INFO] - message sent: took 1,085,973
+21/09/2013 02:32:36.412] - [INFO] - message sent: took 917,404
+21/09/2013 02:32:36.759] - [INFO] - message sent: took 868,779
+21/09/2013 02:32:37.103] - [INFO] - message sent: took 1,760,250
+21/09/2013 02:32:37.448] - [INFO] - message sent: took 1,135,004
+21/09/2013 02:32:37.792] - [INFO] - message sent: took 555,143
+21/09/2013 02:32:38.144] - [INFO] - message sent: took 876,072
+21/09/2013 02:32:38.488] - [INFO] - message sent: took 972,919
+21/09/2013 02:32:38.834] - [INFO] - message sent: took 898,765
+21/09/2013 02:32:39.177] - [INFO] - message sent: took 944,959
+21/09/2013 02:32:39.528] - [INFO] - message sent: took 799,082
+21/09/2013 02:32:39.875] - [INFO] - message sent: took 948,606
+21/09/2013 02:32:40.219] - [INFO] - message sent: took 1,019,113
+21/09/2013 02:32:40.564] - [INFO] - message sent: took 881,746
+21/09/2013 02:32:40.911] - [INFO] - message sent: took 893,902
+21/09/2013 02:32:41.260] - [INFO] - message sent: took 6,362,670
+21/09/2013 02:32:41.604] - [INFO] - message sent: took 1,031,270
+21/09/2013 02:32:41.967] - [INFO] - message sent: took 625,245
+21/09/2013 02:32:42.311] - [INFO] - message sent: took 906,464
+21/09/2013 02:32:42.662] - [INFO] - message sent: took 1,198,218
+21/09/2013 02:32:43.008] - [INFO] - message sent: took 1,393,531
+21/09/2013 02:32:43.356] - [INFO] - message sent: took 874,857
+21/09/2013 02:32:43.703] - [INFO] - message sent: took 554,333
+21/09/2013 02:32:44.050] - [INFO] - message sent: took 556,764
+21/09/2013 02:32:44.394] - [INFO] - message sent: took 579,456
+21/09/2013 02:32:44.741] - [INFO] - message sent: took 920,241
+21/09/2013 02:32:45.086] - [INFO] - message sent: took 867,968
+21/09/2013 02:32:45.432] - [INFO] - message sent: took 957,521
+21/09/2013 02:32:45.775] - [INFO] - message sent: took 728,980
+21/09/2013 02:32:46.122] - [INFO] - message sent: took 923,482
+21/09/2013 02:32:46.467] - [INFO] - message sent: took 866,752
+21/09/2013 02:32:46.818] - [INFO] - message sent: took 628,892
+21/09/2013 02:32:47.165] - [INFO] - message sent: took 1,153,644
+21/09/2013 02:32:47.509] - [INFO] - message sent: took 1,060,445
+21/09/2013 02:32:47.858] - [INFO] - message sent: took 930,371
+21/09/2013 02:32:48.201] - [INFO] - message sent: took 634,971
+21/09/2013 02:32:48.547] - [INFO] - message sent: took 1,214,831
+21/09/2013 02:32:48.890] - [INFO] - message sent: took 560,411
+21/09/2013 02:32:49.239] - [INFO] - message sent: took 944,554
+21/09/2013 02:32:49.586] - [INFO] - message sent: took 1,080,301
+21/09/2013 02:32:49.932] - [INFO] - message sent: took 1,895,591
+21/09/2013 02:32:50.274] - [INFO] - message sent: took 907,679
+21/09/2013 02:32:50.618] - [INFO] - message sent: took 872,020
+21/09/2013 02:32:50.962] - [INFO] - message sent: took 1,239,955
+21/09/2013 02:32:51.308] - [INFO] - message sent: took 957,521
+21/09/2013 02:32:51.653] - [INFO] - message sent: took 2,256,636
+21/09/2013 02:32:51.998] - [INFO] - message sent: took 922,673
+21/09/2013 02:32:52.342] - [INFO] - message sent: took 884,177
+21/09/2013 02:32:52.687] - [INFO] - message sent: took 922,673
+21/09/2013 02:32:53.036] - [INFO] - message sent: took 652,395
+21/09/2013 02:32:53.382] - [INFO] - message sent: took 929,560
+21/09/2013 02:32:53.726] - [INFO] - message sent: took 884,987
+21/09/2013 02:32:54.070] - [INFO] - message sent: took 1,352,199
+21/09/2013 02:32:54.416] - [INFO] - message sent: took 902,817
+21/09/2013 02:32:54.762] - [INFO] - message sent: took 881,745
+21/09/2013 02:32:55.107] - [INFO] - message sent: took 1,241,170
+21/09/2013 02:32:55.451] - [INFO] - message sent: took 654,826
+21/09/2013 02:32:55.798] - [INFO] - message sent: took 878,098
+21/09/2013 02:32:55.896] - [INFO] - [id: 0xadb59b9e, /127.0.0.1:2202 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:32:55.898] - [INFO] - [id: 0xadb59b9e, /127.0.0.1:2202 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:32:55.902] - [INFO] - [id: 0xadb59b9e, /127.0.0.1:2202 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:33:31.151] - [INFO] - [id: 0x42874e82] OPEN
+21/09/2013 02:33:31.163] - [INFO] - [id: 0x42874e82, /127.0.0.1:2203 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2203
+21/09/2013 02:33:31.165] - [INFO] - [id: 0x42874e82, /127.0.0.1:2203 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:33:32.178] - [INFO] - message sent: took 7,340,045
+21/09/2013 02:33:32.542] - [INFO] - message sent: took 11,311,548
+21/09/2013 02:33:32.906] - [INFO] - message sent: took 8,148,853
+21/09/2013 02:33:33.292] - [INFO] - message sent: took 11,934,362
+21/09/2013 02:33:33.668] - [INFO] - message sent: took 23,127,182
+21/09/2013 02:33:34.018] - [INFO] - message sent: took 1,497,265
+21/09/2013 02:33:34.364] - [INFO] - message sent: took 652,394
+21/09/2013 02:33:34.724] - [INFO] - message sent: took 579,050
+21/09/2013 02:33:35.075] - [INFO] - message sent: took 608,631
+21/09/2013 02:33:35.538] - [INFO] - message sent: took 546,229
+21/09/2013 02:33:35.882] - [INFO] - message sent: took 456,676
+21/09/2013 02:33:36.226] - [INFO] - message sent: took 617,546
+21/09/2013 02:33:36.573] - [INFO] - message sent: took 626,866
+21/09/2013 02:33:36.939] - [INFO] - message sent: took 491,524
+21/09/2013 02:33:37.280] - [INFO] - message sent: took 615,115
+21/09/2013 02:33:37.629] - [INFO] - message sent: took 594,449
+21/09/2013 02:33:37.974] - [INFO] - message sent: took 646,316
+21/09/2013 02:33:38.323] - [INFO] - message sent: took 615,115
+21/09/2013 02:33:38.669] - [INFO] - message sent: took 858,243
+21/09/2013 02:33:39.014] - [INFO] - message sent: took 810,428
+21/09/2013 02:33:39.360] - [INFO] - message sent: took 614,304
+21/09/2013 02:33:39.705] - [INFO] - message sent: took 620,787
+21/09/2013 02:33:40.050] - [INFO] - message sent: took 598,501
+21/09/2013 02:33:40.400] - [INFO] - message sent: took 621,598
+21/09/2013 02:33:40.748] - [INFO] - message sent: took 624,435
+21/09/2013 02:33:41.095] - [INFO] - message sent: took 619,572
+21/09/2013 02:33:41.440] - [INFO] - message sent: took 599,311
+21/09/2013 02:33:41.787] - [INFO] - message sent: took 649,964
+21/09/2013 02:33:42.134] - [INFO] - message sent: took 596,880
+21/09/2013 02:33:42.477] - [INFO] - message sent: took 600,527
+21/09/2013 02:33:42.822] - [INFO] - message sent: took 611,873
+21/09/2013 02:33:43.172] - [INFO] - message sent: took 5,206,190
+21/09/2013 02:33:43.514] - [INFO] - message sent: took 629,703
+21/09/2013 02:33:43.859] - [INFO] - message sent: took 836,362
+21/09/2013 02:33:44.204] - [INFO] - message sent: took 574,999
+21/09/2013 02:33:44.549] - [INFO] - message sent: took 615,520
+21/09/2013 02:33:44.894] - [INFO] - message sent: took 625,650
+21/09/2013 02:33:45.239] - [INFO] - message sent: took 628,893
+21/09/2013 02:33:45.583] - [INFO] - message sent: took 611,468
+21/09/2013 02:33:45.931] - [INFO] - message sent: took 632,539
+21/09/2013 02:33:46.283] - [INFO] - message sent: took 5,961,508
+21/09/2013 02:33:46.634] - [INFO] - message sent: took 625,245
+21/09/2013 02:33:46.980] - [INFO] - message sent: took 602,148
+21/09/2013 02:33:47.325] - [INFO] - message sent: took 615,520
+21/09/2013 02:33:47.669] - [INFO] - message sent: took 621,598
+21/09/2013 02:33:48.014] - [INFO] - message sent: took 613,089
+21/09/2013 02:33:48.358] - [INFO] - message sent: took 606,605
+21/09/2013 02:33:48.702] - [INFO] - message sent: took 622,814
+21/09/2013 02:33:49.047] - [INFO] - message sent: took 613,494
+21/09/2013 02:33:49.392] - [INFO] - message sent: took 625,650
+21/09/2013 02:33:49.740] - [INFO] - message sent: took 655,231
+21/09/2013 02:33:50.086] - [INFO] - message sent: took 595,664
+21/09/2013 02:33:50.434] - [INFO] - message sent: took 604,984
+21/09/2013 02:33:50.778] - [INFO] - message sent: took 614,709
+21/09/2013 02:33:51.121] - [INFO] - message sent: took 433,174
+21/09/2013 02:33:51.464] - [INFO] - message sent: took 540,961
+21/09/2013 02:33:51.808] - [INFO] - message sent: took 608,631
+21/09/2013 02:33:52.151] - [INFO] - message sent: took 616,331
+21/09/2013 02:33:52.496] - [INFO] - message sent: took 608,631
+21/09/2013 02:33:52.842] - [INFO] - message sent: took 598,906
+21/09/2013 02:33:53.192] - [INFO] - message sent: took 628,081
+21/09/2013 02:33:53.537] - [INFO] - message sent: took 617,951
+21/09/2013 02:33:53.882] - [INFO] - message sent: took 604,579
+21/09/2013 02:33:54.225] - [INFO] - message sent: took 613,494
+21/09/2013 02:33:54.573] - [INFO] - message sent: took 618,356
+21/09/2013 02:33:54.929] - [INFO] - message sent: took 607,821
+21/09/2013 02:33:55.278] - [INFO] - message sent: took 608,226
+21/09/2013 02:33:55.622] - [INFO] - message sent: took 618,356
+21/09/2013 02:33:55.970] - [INFO] - message sent: took 471,669
+21/09/2013 02:33:56.316] - [INFO] - message sent: took 616,331
+21/09/2013 02:33:56.660] - [INFO] - message sent: took 607,821
+21/09/2013 02:33:57.007] - [INFO] - message sent: took 448,572
+21/09/2013 02:33:57.352] - [INFO] - message sent: took 773,553
+21/09/2013 02:33:57.708] - [INFO] - message sent: took 2,513,947
+21/09/2013 02:33:58.053] - [INFO] - message sent: took 668,198
+21/09/2013 02:33:58.397] - [INFO] - message sent: took 456,271
+21/09/2013 02:33:58.741] - [INFO] - message sent: took 469,238
+21/09/2013 02:33:59.087] - [INFO] - message sent: took 961,978
+21/09/2013 02:33:59.431] - [INFO] - message sent: took 613,494
+21/09/2013 02:33:59.776] - [INFO] - message sent: took 601,742
+21/09/2013 02:34:00.119] - [INFO] - message sent: took 592,422
+21/09/2013 02:34:00.228] - [INFO] - [id: 0x42874e82, /127.0.0.1:2203 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:34:00.232] - [INFO] - [id: 0x42874e82, /127.0.0.1:2203 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:34:00.233] - [INFO] - [id: 0x42874e82, /127.0.0.1:2203 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:34:07.376] - [INFO] - [id: 0x223114ad] OPEN
+21/09/2013 02:34:07.388] - [INFO] - [id: 0x223114ad, /127.0.0.1:2204 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2204
+21/09/2013 02:34:07.390] - [INFO] - [id: 0x223114ad, /127.0.0.1:2204 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:34:07.879] - [INFO] - message sent: took 8,318,637
+21/09/2013 02:34:08.246] - [INFO] - message sent: took 5,692,446
+21/09/2013 02:34:08.610] - [INFO] - message sent: took 3,466,605
+21/09/2013 02:34:08.982] - [INFO] - message sent: took 4,724,795
+21/09/2013 02:34:09.357] - [INFO] - message sent: took 10,219,901
+21/09/2013 02:34:09.708] - [INFO] - message sent: took 1,658,136
+21/09/2013 02:34:10.058] - [INFO] - message sent: took 1,141,893
+21/09/2013 02:34:10.403] - [INFO] - message sent: took 773,148
+21/09/2013 02:34:10.750] - [INFO] - message sent: took 799,893
+21/09/2013 02:34:11.099] - [INFO] - message sent: took 802,324
+21/09/2013 02:34:11.445] - [INFO] - message sent: took 760,182
+21/09/2013 02:34:11.794] - [INFO] - message sent: took 699,399
+21/09/2013 02:34:12.138] - [INFO] - message sent: took 637,402
+21/09/2013 02:34:12.492] - [INFO] - message sent: took 1,096,104
+21/09/2013 02:34:12.844] - [INFO] - message sent: took 788,952
+21/09/2013 02:34:13.197] - [INFO] - message sent: took 831,093
+21/09/2013 02:34:13.542] - [INFO] - message sent: took 784,900
+21/09/2013 02:34:13.892] - [INFO] - message sent: took 751,672
+21/09/2013 02:34:14.240] - [INFO] - message sent: took 747,619
+21/09/2013 02:34:14.589] - [INFO] - message sent: took 814,480
+21/09/2013 02:34:14.957] - [INFO] - message sent: took 1,365,571
+21/09/2013 02:34:15.303] - [INFO] - message sent: took 801,513
+21/09/2013 02:34:15.649] - [INFO] - message sent: took 914,163
+21/09/2013 02:34:16.000] - [INFO] - message sent: took 788,141
+21/09/2013 02:34:16.350] - [INFO] - message sent: took 2,644,021
+21/09/2013 02:34:16.704] - [INFO] - message sent: took 760,587
+21/09/2013 02:34:17.056] - [INFO] - message sent: took 876,478
+21/09/2013 02:34:17.400] - [INFO] - message sent: took 764,234
+21/09/2013 02:34:17.753] - [INFO] - message sent: took 891,066
+21/09/2013 02:34:18.101] - [INFO] - message sent: took 1,898,022
+21/09/2013 02:34:18.449] - [INFO] - message sent: took 710,745
+21/09/2013 02:34:18.802] - [INFO] - message sent: took 848,518
+21/09/2013 02:34:19.154] - [INFO] - message sent: took 4,572,840
+21/09/2013 02:34:19.500] - [INFO] - message sent: took 1,366,381
+21/09/2013 02:34:19.853] - [INFO] - message sent: took 1,236,713
+21/09/2013 02:34:20.210] - [INFO] - message sent: took 818,533
+21/09/2013 02:34:20.560] - [INFO] - message sent: took 4,408,728
+21/09/2013 02:34:20.916] - [INFO] - message sent: took 675,087
+21/09/2013 02:34:21.266] - [INFO] - message sent: took 779,226
+21/09/2013 02:34:21.612] - [INFO] - message sent: took 728,169
+21/09/2013 02:34:21.959] - [INFO] - message sent: took 732,627
+21/09/2013 02:34:22.301] - [INFO] - message sent: took 1,227,799
+21/09/2013 02:34:22.657] - [INFO] - message sent: took 748,835
+21/09/2013 02:34:22.943] - [INFO] - [id: 0x223114ad, /127.0.0.1:2204 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:34:22.948] - [INFO] - [id: 0x223114ad, /127.0.0.1:2204 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:34:22.950] - [INFO] - [id: 0x223114ad, /127.0.0.1:2204 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:35:24.668] - [INFO] - [id: 0xddc6196b] OPEN
+21/09/2013 02:35:24.679] - [INFO] - [id: 0xddc6196b, /127.0.0.1:2205 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2205
+21/09/2013 02:35:24.682] - [INFO] - [id: 0xddc6196b, /127.0.0.1:2205 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:35:25.181] - [INFO] - message sent: took 6,299,457
+21/09/2013 02:35:25.538] - [SEVERE] - Exception thrown in getMove on turn 2
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:107)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:37:39.367] - [INFO] - [id: 0x50685e22] OPEN
+21/09/2013 02:37:39.379] - [INFO] - [id: 0x50685e22, /127.0.0.1:2206 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2206
+21/09/2013 02:37:39.381] - [INFO] - [id: 0x50685e22, /127.0.0.1:2206 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:37:39.890] - [INFO] - message sent: took 9,364,089
+21/09/2013 02:37:40.259] - [INFO] - message sent: took 5,487,003
+21/09/2013 02:37:40.618] - [INFO] - message sent: took 2,695,078
+21/09/2013 02:37:40.980] - [INFO] - message sent: took 12,537,320
+21/09/2013 02:37:41.344] - [INFO] - message sent: took 10,684,277
+21/09/2013 02:37:41.701] - [INFO] - message sent: took 974,540
+21/09/2013 02:37:42.062] - [INFO] - message sent: took 597,690
+21/09/2013 02:37:42.410] - [INFO] - message sent: took 632,539
+21/09/2013 02:37:42.760] - [INFO] - message sent: took 1,652,868
+21/09/2013 02:37:43.103] - [INFO] - message sent: took 654,015
+21/09/2013 02:37:43.450] - [INFO] - message sent: took 641,454
+21/09/2013 02:37:43.802] - [INFO] - message sent: took 671,845
+21/09/2013 02:37:44.153] - [INFO] - message sent: took 623,624
+21/09/2013 02:37:44.508] - [INFO] - message sent: took 3,772,542
+21/09/2013 02:37:44.859] - [INFO] - message sent: took 2,152,497
+21/09/2013 02:37:45.205] - [INFO] - message sent: took 626,461
+21/09/2013 02:37:45.554] - [INFO] - message sent: took 615,925
+21/09/2013 02:37:45.902] - [INFO] - message sent: took 638,212
+21/09/2013 02:37:46.249] - [INFO] - message sent: took 2,931,723
+21/09/2013 02:37:46.594] - [INFO] - message sent: took 631,323
+21/09/2013 02:37:46.968] - [INFO] - message sent: took 617,546
+21/09/2013 02:37:47.426] - [INFO] - message sent: took 818,127
+21/09/2013 02:37:47.768] - [INFO] - message sent: took 1,092,862
+21/09/2013 02:37:48.123] - [INFO] - message sent: took 624,840
+21/09/2013 02:37:48.472] - [INFO] - message sent: took 624,839
+21/09/2013 02:37:48.822] - [INFO] - message sent: took 627,271
+21/09/2013 02:37:49.172] - [INFO] - message sent: took 832,310
+21/09/2013 02:37:49.626] - [INFO] - message sent: took 613,899
+21/09/2013 02:37:49.969] - [INFO] - message sent: took 547,849
+21/09/2013 02:37:50.313] - [INFO] - message sent: took 635,375
+21/09/2013 02:37:50.657] - [INFO] - message sent: took 734,653
+21/09/2013 02:37:51.007] - [INFO] - message sent: took 672,656
+21/09/2013 02:37:51.351] - [INFO] - message sent: took 620,788
+21/09/2013 02:37:51.695] - [INFO] - message sent: took 631,729
+21/09/2013 02:37:52.046] - [INFO] - message sent: took 643,074
+21/09/2013 02:37:52.390] - [INFO] - message sent: took 640,644
+21/09/2013 02:37:52.734] - [INFO] - message sent: took 607,416
+21/09/2013 02:37:53.084] - [INFO] - message sent: took 462,755
+21/09/2013 02:37:53.543] - [INFO] - message sent: took 582,698
+21/09/2013 02:37:53.889] - [INFO] - message sent: took 606,200
+21/09/2013 02:37:54.235] - [INFO] - message sent: took 603,769
+21/09/2013 02:37:54.578] - [INFO] - message sent: took 509,354
+21/09/2013 02:37:54.922] - [INFO] - message sent: took 677,518
+21/09/2013 02:37:55.268] - [INFO] - message sent: took 634,565
+21/09/2013 02:37:55.617] - [INFO] - message sent: took 572,972
+21/09/2013 02:37:55.966] - [INFO] - message sent: took 647,126
+21/09/2013 02:37:56.310] - [INFO] - message sent: took 531,640
+21/09/2013 02:37:56.656] - [INFO] - message sent: took 635,781
+21/09/2013 02:37:57.002] - [INFO] - message sent: took 657,662
+21/09/2013 02:37:57.348] - [INFO] - message sent: took 639,428
+21/09/2013 02:37:57.691] - [INFO] - message sent: took 486,662
+21/09/2013 02:37:58.146] - [INFO] - message sent: took 613,089
+21/09/2013 02:37:58.494] - [INFO] - message sent: took 616,736
+21/09/2013 02:37:58.954] - [INFO] - message sent: took 718,039
+21/09/2013 02:37:59.299] - [INFO] - message sent: took 654,015
+21/09/2013 02:37:59.647] - [INFO] - message sent: took 616,736
+21/09/2013 02:37:59.987] - [INFO] - message sent: took 481,799
+21/09/2013 02:38:00.463] - [INFO] - message sent: took 631,729
+21/09/2013 02:38:00.809] - [INFO] - message sent: took 644,290
+21/09/2013 02:38:01.170] - [INFO] - message sent: took 515,838
+21/09/2013 02:38:01.635] - [INFO] - message sent: took 445,330
+21/09/2013 02:38:01.983] - [INFO] - message sent: took 851,760
+21/09/2013 02:38:02.349] - [INFO] - message sent: took 536,503
+21/09/2013 02:38:02.692] - [INFO] - message sent: took 625,650
+21/09/2013 02:38:03.036] - [INFO] - message sent: took 629,703
+21/09/2013 02:38:03.383] - [INFO] - message sent: took 621,598
+21/09/2013 02:38:03.732] - [INFO] - message sent: took 627,271
+21/09/2013 02:38:04.081] - [INFO] - message sent: took 653,205
+21/09/2013 02:38:04.430] - [INFO] - message sent: took 613,899
+21/09/2013 02:38:04.777] - [INFO] - message sent: took 605,795
+21/09/2013 02:38:05.128] - [INFO] - message sent: took 602,148
+21/09/2013 02:38:05.488] - [INFO] - message sent: took 970,487
+21/09/2013 02:38:05.831] - [INFO] - message sent: took 618,357
+21/09/2013 02:38:06.187] - [INFO] - message sent: took 504,491
+21/09/2013 02:38:06.533] - [INFO] - message sent: took 1,397,178
+21/09/2013 02:38:06.879] - [INFO] - message sent: took 783,278
+21/09/2013 02:38:07.224] - [INFO] - message sent: took 1,695,820
+21/09/2013 02:38:07.571] - [INFO] - message sent: took 1,154,049
+21/09/2013 02:38:07.915] - [INFO] - message sent: took 965,220
+21/09/2013 02:38:08.012] - [INFO] - [id: 0x50685e22, /127.0.0.1:2206 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:38:08.014] - [INFO] - [id: 0x50685e22, /127.0.0.1:2206 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:38:08.016] - [INFO] - [id: 0x50685e22, /127.0.0.1:2206 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:38:18.922] - [INFO] - [id: 0x8305f863] OPEN
+21/09/2013 02:38:18.934] - [INFO] - [id: 0x8305f863, /127.0.0.1:2207 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2207
+21/09/2013 02:38:18.936] - [INFO] - [id: 0x8305f863, /127.0.0.1:2207 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:38:19.428] - [INFO] - message sent: took 6,651,587
+21/09/2013 02:38:19.787] - [INFO] - message sent: took 7,485,113
+21/09/2013 02:38:20.140] - [INFO] - message sent: took 5,205,784
+21/09/2013 02:38:20.507] - [INFO] - message sent: took 15,283,455
+21/09/2013 02:38:20.869] - [INFO] - message sent: took 14,773,291
+21/09/2013 02:38:21.219] - [SEVERE] - Exception thrown in getMove on turn 6
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:110)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:38:51.100] - [INFO] - [id: 0xffb48217] OPEN
+21/09/2013 02:38:51.112] - [INFO] - [id: 0xffb48217, /127.0.0.1:2208 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2208
+21/09/2013 02:38:51.114] - [INFO] - [id: 0xffb48217, /127.0.0.1:2208 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:38:51.602] - [INFO] - message sent: took 5,521,851
+21/09/2013 02:38:51.971] - [INFO] - message sent: took 7,253,330
+21/09/2013 02:38:52.328] - [INFO] - message sent: took 3,211,321
+21/09/2013 02:38:52.691] - [INFO] - message sent: took 8,713,316
+21/09/2013 02:38:53.056] - [INFO] - message sent: took 9,373,005
+21/09/2013 02:38:53.401] - [INFO] - message sent: took 859,459
+21/09/2013 02:38:53.742] - [INFO] - message sent: took 871,615
+21/09/2013 02:38:54.197] - [INFO] - message sent: took 817,722
+21/09/2013 02:38:54.541] - [INFO] - message sent: took 756,534
+21/09/2013 02:38:54.886] - [INFO] - message sent: took 800,703
+21/09/2013 02:38:55.230] - [INFO] - message sent: took 787,736
+21/09/2013 02:38:55.574] - [INFO] - message sent: took 797,056
+21/09/2013 02:38:55.923] - [INFO] - message sent: took 773,959
+21/09/2013 02:38:56.269] - [INFO] - message sent: took 801,108
+21/09/2013 02:38:56.617] - [INFO] - message sent: took 806,781
+21/09/2013 02:38:56.967] - [INFO] - message sent: took 1,127,710
+21/09/2013 02:38:57.315] - [INFO] - message sent: took 751,672
+21/09/2013 02:38:57.772] - [INFO] - message sent: took 764,639
+21/09/2013 02:38:58.113] - [INFO] - message sent: took 767,475
+21/09/2013 02:38:58.459] - [INFO] - message sent: took 770,312
+21/09/2013 02:38:58.807] - [INFO] - message sent: took 754,509
+21/09/2013 02:38:59.197] - [INFO] - message sent: took 863,511
+21/09/2013 02:38:59.548] - [INFO] - message sent: took 3,142,029
+21/09/2013 02:38:59.898] - [INFO] - message sent: took 925,509
+21/09/2013 02:39:00.244] - [INFO] - message sent: took 1,717,297
+21/09/2013 02:39:00.596] - [INFO] - message sent: took 893,496
+21/09/2013 02:39:00.946] - [INFO] - message sent: took 784,899
+21/09/2013 02:39:01.292] - [INFO] - message sent: took 766,260
+21/09/2013 02:39:01.637] - [INFO] - message sent: took 779,632
+21/09/2013 02:39:01.983] - [INFO] - message sent: took 1,008,578
+21/09/2013 02:39:02.329] - [INFO] - message sent: took 757,345
+21/09/2013 02:39:02.679] - [INFO] - message sent: took 834,740
+21/09/2013 02:39:03.047] - [INFO] - message sent: took 1,313,703
+21/09/2013 02:39:03.401] - [INFO] - message sent: took 1,588,438
+21/09/2013 02:39:03.757] - [INFO] - message sent: took 1,034,916
+21/09/2013 02:39:04.096] - [INFO] - message sent: took 1,543,866
+21/09/2013 02:39:04.446] - [INFO] - message sent: took 6,004,461
+21/09/2013 02:39:04.788] - [INFO] - message sent: took 775,175
+21/09/2013 02:39:05.142] - [INFO] - message sent: took 15,449,593
+21/09/2013 02:39:05.489] - [INFO] - message sent: took 786,115
+21/09/2013 02:39:05.834] - [INFO] - message sent: took 1,312,488
+21/09/2013 02:39:06.180] - [INFO] - message sent: took 780,442
+21/09/2013 02:39:06.658] - [INFO] - message sent: took 1,064,497
+21/09/2013 02:39:07.001] - [INFO] - message sent: took 766,665
+21/09/2013 02:39:07.351] - [INFO] - message sent: took 764,234
+21/09/2013 02:39:07.704] - [INFO] - message sent: took 774,364
+21/09/2013 02:39:08.049] - [INFO] - message sent: took 777,606
+21/09/2013 02:39:08.392] - [INFO] - message sent: took 1,099,346
+21/09/2013 02:39:08.734] - [INFO] - message sent: took 874,047
+21/09/2013 02:39:09.079] - [INFO] - message sent: took 781,658
+21/09/2013 02:39:09.427] - [INFO] - message sent: took 763,828
+21/09/2013 02:39:09.772] - [INFO] - message sent: took 747,620
+21/09/2013 02:39:10.118] - [INFO] - message sent: took 780,847
+21/09/2013 02:39:10.462] - [INFO] - message sent: took 778,821
+21/09/2013 02:39:10.807] - [INFO] - message sent: took 762,207
+21/09/2013 02:39:11.152] - [INFO] - message sent: took 757,750
+21/09/2013 02:39:11.502] - [INFO] - message sent: took 1,109,881
+21/09/2013 02:39:11.846] - [INFO] - message sent: took 758,965
+21/09/2013 02:39:12.207] - [INFO] - message sent: took 1,106,639
+21/09/2013 02:39:12.574] - [INFO] - message sent: took 15,031,817
+21/09/2013 02:39:12.939] - [INFO] - message sent: took 963,193
+21/09/2013 02:39:13.284] - [INFO] - message sent: took 1,430,000
+21/09/2013 02:39:13.656] - [INFO] - message sent: took 1,280,881
+21/09/2013 02:39:14.037] - [INFO] - message sent: took 1,143,919
+21/09/2013 02:39:14.389] - [INFO] - message sent: took 749,240
+21/09/2013 02:39:14.739] - [INFO] - message sent: took 778,821
+21/09/2013 02:39:15.086] - [INFO] - message sent: took 802,728
+21/09/2013 02:39:15.455] - [INFO] - message sent: took 1,004,120
+21/09/2013 02:39:15.800] - [INFO] - message sent: took 818,127
+21/09/2013 02:39:16.157] - [INFO] - message sent: took 1,357,062
+21/09/2013 02:39:16.505] - [INFO] - message sent: took 749,645
+21/09/2013 02:39:16.850] - [INFO] - message sent: took 1,074,628
+21/09/2013 02:39:17.273] - [INFO] - message sent: took 778,821
+21/09/2013 02:39:17.620] - [INFO] - message sent: took 758,156
+21/09/2013 02:39:17.970] - [INFO] - message sent: took 843,656
+21/09/2013 02:39:18.314] - [INFO] - message sent: took 762,613
+21/09/2013 02:39:18.659] - [INFO] - message sent: took 751,266
+21/09/2013 02:39:19.005] - [INFO] - message sent: took 862,295
+21/09/2013 02:39:19.349] - [INFO] - message sent: took 750,862
+21/09/2013 02:39:19.694] - [INFO] - message sent: took 986,696
+21/09/2013 02:39:20.036] - [INFO] - message sent: took 769,906
+21/09/2013 02:39:20.380] - [INFO] - message sent: took 754,913
+21/09/2013 02:39:20.724] - [INFO] - message sent: took 756,940
+21/09/2013 02:39:21.071] - [INFO] - message sent: took 985,885
+21/09/2013 02:39:21.422] - [INFO] - message sent: took 617,141
+21/09/2013 02:39:21.762] - [INFO] - message sent: took 1,091,242
+21/09/2013 02:39:22.107] - [INFO] - message sent: took 757,345
+21/09/2013 02:39:22.454] - [INFO] - message sent: took 768,691
+21/09/2013 02:39:22.801] - [INFO] - message sent: took 1,947,864
+21/09/2013 02:39:23.145] - [INFO] - message sent: took 823,395
+21/09/2013 02:39:23.494] - [INFO] - message sent: took 2,767,612
+21/09/2013 02:39:23.836] - [INFO] - message sent: took 763,424
+21/09/2013 02:39:24.195] - [INFO] - message sent: took 722,496
+21/09/2013 02:39:24.540] - [INFO] - message sent: took 725,333
+21/09/2013 02:39:24.885] - [INFO] - message sent: took 912,947
+21/09/2013 02:39:25.229] - [INFO] - message sent: took 748,836
+21/09/2013 02:39:25.580] - [INFO] - message sent: took 628,487
+21/09/2013 02:39:25.935] - [INFO] - message sent: took 867,158
+21/09/2013 02:39:26.287] - [INFO] - message sent: took 788,952
+21/09/2013 02:39:26.636] - [INFO] - message sent: took 750,457
+21/09/2013 02:39:26.981] - [INFO] - message sent: took 841,630
+21/09/2013 02:39:27.326] - [INFO] - message sent: took 747,214
+21/09/2013 02:39:27.669] - [INFO] - message sent: took 539,340
+21/09/2013 02:39:28.013] - [INFO] - message sent: took 755,724
+21/09/2013 02:39:28.360] - [INFO] - message sent: took 2,547,175
+21/09/2013 02:39:28.704] - [INFO] - message sent: took 680,759
+21/09/2013 02:39:29.051] - [INFO] - message sent: took 785,305
+21/09/2013 02:39:29.397] - [INFO] - message sent: took 820,559
+21/09/2013 02:39:29.740] - [INFO] - message sent: took 751,672
+21/09/2013 02:39:30.086] - [INFO] - message sent: took 960,357
+21/09/2013 02:39:30.434] - [INFO] - message sent: took 1,238,333
+21/09/2013 02:39:30.779] - [INFO] - message sent: took 1,259,405
+21/09/2013 02:39:31.122] - [INFO] - message sent: took 1,103,803
+21/09/2013 02:39:31.464] - [INFO] - message sent: took 859,459
+21/09/2013 02:39:31.808] - [INFO] - message sent: took 1,203,891
+21/09/2013 02:39:32.150] - [INFO] - message sent: took 1,269,940
+21/09/2013 02:39:32.496] - [INFO] - message sent: took 1,603,432
+21/09/2013 02:39:32.838] - [INFO] - message sent: took 1,109,881
+21/09/2013 02:39:33.193] - [INFO] - message sent: took 1,070,981
+21/09/2013 02:39:33.540] - [INFO] - message sent: took 1,361,113
+21/09/2013 02:39:33.884] - [INFO] - message sent: took 1,250,896
+21/09/2013 02:39:34.230] - [INFO] - message sent: took 1,966,909
+21/09/2013 02:39:34.575] - [INFO] - message sent: took 1,123,253
+21/09/2013 02:39:34.918] - [INFO] - message sent: took 1,261,837
+21/09/2013 02:39:35.263] - [INFO] - message sent: took 1,356,252
+21/09/2013 02:39:35.611] - [INFO] - message sent: took 1,051,530
+21/09/2013 02:39:35.955] - [INFO] - message sent: took 1,088,405
+21/09/2013 02:39:36.305] - [INFO] - message sent: took 1,290,201
+21/09/2013 02:39:36.652] - [INFO] - message sent: took 2,661,040
+21/09/2013 02:39:37.001] - [INFO] - message sent: took 1,068,549
+21/09/2013 02:39:37.345] - [INFO] - message sent: took 1,088,809
+21/09/2013 02:39:37.691] - [INFO] - message sent: took 776,795
+21/09/2013 02:39:38.036] - [INFO] - message sent: took 744,784
+21/09/2013 02:39:38.385] - [INFO] - message sent: took 2,384,684
+21/09/2013 02:39:38.731] - [INFO] - message sent: took 854,191
+21/09/2013 02:39:39.079] - [INFO] - message sent: took 1,269,130
+21/09/2013 02:39:39.421] - [INFO] - message sent: took 1,415,413
+21/09/2013 02:39:39.766] - [INFO] - message sent: took 1,270,346
+21/09/2013 02:39:40.112] - [INFO] - message sent: took 1,226,988
+21/09/2013 02:39:40.456] - [INFO] - message sent: took 1,257,379
+21/09/2013 02:39:40.819] - [INFO] - message sent: took 17,643,017
+21/09/2013 02:39:41.162] - [INFO] - message sent: took 575,809
+21/09/2013 02:39:41.506] - [INFO] - message sent: took 736,274
+21/09/2013 02:39:41.857] - [INFO] - message sent: took 1,501,318
+21/09/2013 02:39:42.317] - [INFO] - message sent: took 2,030,932
+21/09/2013 02:39:42.662] - [INFO] - message sent: took 996,016
+21/09/2013 02:39:43.011] - [INFO] - message sent: took 974,945
+21/09/2013 02:39:43.361] - [INFO] - message sent: took 1,245,628
+21/09/2013 02:39:43.705] - [INFO] - message sent: took 843,250
+21/09/2013 02:39:44.052] - [INFO] - message sent: took 735,058
+21/09/2013 02:39:44.401] - [INFO] - message sent: took 923,482
+21/09/2013 02:39:44.746] - [INFO] - message sent: took 1,708,787
+21/09/2013 02:39:45.091] - [INFO] - message sent: took 1,065,308
+21/09/2013 02:39:45.436] - [INFO] - message sent: took 2,161,006
+21/09/2013 02:39:45.781] - [INFO] - message sent: took 1,588,844
+21/09/2013 02:39:46.009] - [INFO] - [id: 0xffb48217, /127.0.0.1:2208 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:39:46.011] - [INFO] - [id: 0xffb48217, /127.0.0.1:2208 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:39:46.012] - [INFO] - [id: 0xffb48217, /127.0.0.1:2208 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:39:51.502] - [INFO] - [id: 0xb28c6823] OPEN
+21/09/2013 02:39:51.514] - [INFO] - [id: 0xb28c6823, /127.0.0.1:2211 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2211
+21/09/2013 02:39:51.516] - [INFO] - [id: 0xb28c6823, /127.0.0.1:2211 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:39:52.008] - [INFO] - message sent: took 6,819,346
+21/09/2013 02:39:52.371] - [INFO] - message sent: took 7,099,754
+21/09/2013 02:39:52.737] - [INFO] - message sent: took 4,693,188
+21/09/2013 02:39:53.105] - [INFO] - message sent: took 16,448,851
+21/09/2013 02:39:53.471] - [INFO] - message sent: took 10,682,656
+21/09/2013 02:39:53.811] - [INFO] - message sent: took 1,445,399
+21/09/2013 02:39:54.158] - [INFO] - message sent: took 1,304,383
+21/09/2013 02:39:54.502] - [INFO] - message sent: took 984,265
+21/09/2013 02:39:54.850] - [INFO] - message sent: took 2,015,535
+21/09/2013 02:39:55.199] - [INFO] - message sent: took 1,164,990
+21/09/2013 02:39:55.550] - [INFO] - message sent: took 3,235,229
+21/09/2013 02:39:55.896] - [INFO] - message sent: took 1,208,348
+21/09/2013 02:39:56.255] - [SEVERE] - Exception thrown in getMove on turn 13
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:109)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:40:23.695] - [INFO] - [id: 0x4fd8edde] OPEN
+21/09/2013 02:40:23.707] - [INFO] - [id: 0x4fd8edde, /127.0.0.1:2212 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2212
+21/09/2013 02:40:23.719] - [INFO] - [id: 0x4fd8edde, /127.0.0.1:2212 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:40:24.221] - [SEVERE] - Exception thrown in getMove on turn 1
+java.lang.IndexOutOfBoundsException: Index: -1, Size: 2
+	at java.util.LinkedList.checkElementIndex(Unknown Source)
+	at java.util.LinkedList.get(Unknown Source)
+	at PlayerAI.getMove(PlayerAI.java:109)
+	at ClientHandler.messageReceived(ClientHandler.java:79)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at ClientHandler.handleUpstream(ClientHandler.java:40)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.oneone.OneToOneDecoder.handleUpstream(OneToOneDecoder.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.oio.OioWorker.process(OioWorker.java:71)
+	at org.jboss.netty.channel.socket.oio.AbstractOioWorker.run(AbstractOioWorker.java:73)
+	at org.jboss.netty.channel.socket.oio.OioWorker.run(OioWorker.java:51)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+21/09/2013 02:42:23.044] - [INFO] - [id: 0xb48170e9] OPEN
+21/09/2013 02:42:23.058] - [INFO] - [id: 0xb48170e9, /127.0.0.1:2217 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2217
+21/09/2013 02:42:23.060] - [INFO] - [id: 0xb48170e9, /127.0.0.1:2217 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:42:23.569] - [INFO] - message sent: took 10,019,320
+21/09/2013 02:42:23.950] - [INFO] - message sent: took 4,977,649
+21/09/2013 02:42:24.304] - [INFO] - message sent: took 2,530,967
+21/09/2013 02:42:24.662] - [INFO] - message sent: took 5,635,716
+21/09/2013 02:42:25.055] - [INFO] - message sent: took 33,834,962
+21/09/2013 02:42:25.406] - [INFO] - message sent: took 2,778,147
+21/09/2013 02:42:25.755] - [INFO] - message sent: took 1,521,984
+21/09/2013 02:42:26.218] - [INFO] - message sent: took 1,062,876
+21/09/2013 02:42:26.574] - [INFO] - message sent: took 1,545,891
+21/09/2013 02:42:26.925] - [INFO] - message sent: took 1,034,511
+21/09/2013 02:42:27.276] - [INFO] - message sent: took 1,085,973
+21/09/2013 02:42:27.618] - [INFO] - message sent: took 746,404
+21/09/2013 02:42:27.965] - [INFO] - message sent: took 872,831
+21/09/2013 02:42:28.313] - [INFO] - message sent: took 1,034,916
+21/09/2013 02:42:28.667] - [INFO] - message sent: took 1,139,462
+21/09/2013 02:42:29.013] - [INFO] - message sent: took 1,057,203
+21/09/2013 02:42:29.373] - [INFO] - message sent: took 1,037,753
+21/09/2013 02:42:29.717] - [INFO] - message sent: took 1,025,597
+21/09/2013 02:42:30.062] - [INFO] - message sent: took 1,167,827
+21/09/2013 02:42:30.411] - [INFO] - message sent: took 1,957,589
+21/09/2013 02:42:30.763] - [INFO] - message sent: took 1,304,789
+21/09/2013 02:42:31.107] - [INFO] - message sent: took 1,025,191
+21/09/2013 02:42:31.454] - [INFO] - message sent: took 1,081,921
+21/09/2013 02:42:31.806] - [INFO] - message sent: took 1,122,038
+21/09/2013 02:42:32.150] - [INFO] - message sent: took 1,041,805
+21/09/2013 02:42:32.494] - [INFO] - message sent: took 953,063
+21/09/2013 02:42:32.839] - [INFO] - message sent: took 2,118,459
+21/09/2013 02:42:33.194] - [INFO] - message sent: took 1,066,118
+21/09/2013 02:42:33.540] - [INFO] - message sent: took 1,030,865
+21/09/2013 02:42:33.886] - [INFO] - message sent: took 1,265,889
+21/09/2013 02:42:34.233] - [INFO] - message sent: took 1,095,699
+21/09/2013 02:42:34.585] - [INFO] - message sent: took 5,676,238
+21/09/2013 02:42:34.934] - [INFO] - message sent: took 966,435
+21/09/2013 02:42:35.279] - [INFO] - message sent: took 1,027,218
+21/09/2013 02:42:35.621] - [INFO] - message sent: took 819,748
+21/09/2013 02:42:35.968] - [INFO] - message sent: took 1,045,047
+21/09/2013 02:42:36.318] - [INFO] - message sent: took 1,028,838
+21/09/2013 02:42:36.668] - [INFO] - message sent: took 1,062,471
+21/09/2013 02:42:37.014] - [INFO] - message sent: took 1,067,738
+21/09/2013 02:42:37.364] - [INFO] - message sent: took 1,040,589
+21/09/2013 02:42:37.709] - [INFO] - message sent: took 1,191,734
+21/09/2013 02:42:38.053] - [INFO] - message sent: took 1,021,140
+21/09/2013 02:42:38.400] - [INFO] - message sent: took 1,211,995
+21/09/2013 02:42:38.748] - [INFO] - message sent: took 1,056,798
+21/09/2013 02:42:39.096] - [INFO] - message sent: took 1,061,255
+21/09/2013 02:42:39.445] - [INFO] - message sent: took 1,030,864
+21/09/2013 02:42:39.791] - [INFO] - message sent: took 1,009,793
+21/09/2013 02:42:40.136] - [INFO] - message sent: took 1,038,158
+21/09/2013 02:42:40.480] - [INFO] - message sent: took 1,027,622
+21/09/2013 02:42:40.828] - [INFO] - message sent: took 2,062,944
+21/09/2013 02:42:41.199] - [INFO] - message sent: took 1,114,744
+21/09/2013 02:42:41.546] - [INFO] - message sent: took 1,185,656
+21/09/2013 02:42:41.896] - [INFO] - message sent: took 1,050,314
+21/09/2013 02:42:42.240] - [INFO] - message sent: took 1,062,471
+21/09/2013 02:42:42.588] - [INFO] - message sent: took 1,021,949
+21/09/2013 02:42:42.935] - [INFO] - message sent: took 1,038,969
+21/09/2013 02:42:43.280] - [INFO] - message sent: took 1,105,423
+21/09/2013 02:42:43.629] - [INFO] - message sent: took 1,038,969
+21/09/2013 02:42:43.974] - [INFO] - message sent: took 1,202,675
+21/09/2013 02:42:44.318] - [INFO] - message sent: took 1,033,295
+21/09/2013 02:42:44.663] - [INFO] - message sent: took 1,090,431
+21/09/2013 02:42:45.008] - [INFO] - message sent: took 1,051,530
+21/09/2013 02:42:45.352] - [INFO] - message sent: took 1,580,740
+21/09/2013 02:42:45.699] - [INFO] - message sent: took 1,034,511
+21/09/2013 02:42:46.043] - [INFO] - message sent: took 1,545,080
+21/09/2013 02:42:46.386] - [INFO] - message sent: took 1,047,884
+21/09/2013 02:42:46.733] - [INFO] - message sent: took 1,048,693
+21/09/2013 02:42:47.079] - [INFO] - message sent: took 1,051,935
+21/09/2013 02:42:47.430] - [INFO] - message sent: took 1,157,291
+21/09/2013 02:42:47.780] - [INFO] - message sent: took 3,547,243
+21/09/2013 02:42:48.127] - [INFO] - message sent: took 1,024,381
+21/09/2013 02:42:48.473] - [INFO] - message sent: took 1,040,184
+21/09/2013 02:42:48.819] - [INFO] - message sent: took 2,269,603
+21/09/2013 02:42:49.202] - [INFO] - message sent: took 1,177,957
+21/09/2013 02:42:49.546] - [INFO] - message sent: took 1,032,080
+21/09/2013 02:42:49.890] - [INFO] - message sent: took 1,114,744
+21/09/2013 02:42:50.236] - [INFO] - message sent: took 1,108,261
+21/09/2013 02:42:50.580] - [INFO] - message sent: took 1,118,796
+21/09/2013 02:42:50.926] - [INFO] - message sent: took 1,046,668
+21/09/2013 02:42:51.271] - [INFO] - message sent: took 1,480,247
+21/09/2013 02:42:51.618] - [INFO] - message sent: took 1,027,217
+21/09/2013 02:42:51.962] - [INFO] - message sent: took 1,040,185
+21/09/2013 02:42:52.313] - [INFO] - message sent: took 3,154,185
+21/09/2013 02:42:52.659] - [INFO] - message sent: took 1,514,284
+21/09/2013 02:42:53.005] - [INFO] - message sent: took 1,154,454
+21/09/2013 02:42:53.350] - [INFO] - message sent: took 1,016,681
+21/09/2013 02:42:53.696] - [INFO] - message sent: took 1,022,355
+21/09/2013 02:42:54.043] - [INFO] - message sent: took 1,165,800
+21/09/2013 02:42:54.390] - [INFO] - message sent: took 3,068,280
+21/09/2013 02:42:54.731] - [INFO] - message sent: took 1,028,838
+21/09/2013 02:42:55.077] - [INFO] - message sent: took 2,068,212
+21/09/2013 02:42:55.421] - [INFO] - message sent: took 1,192,140
+21/09/2013 02:42:55.769] - [INFO] - message sent: took 3,166,748
+21/09/2013 02:42:56.115] - [INFO] - message sent: took 1,198,623
+21/09/2013 02:42:56.461] - [INFO] - message sent: took 1,008,983
+21/09/2013 02:42:56.808] - [INFO] - message sent: took 1,035,321
+21/09/2013 02:42:57.166] - [INFO] - message sent: took 1,143,109
+21/09/2013 02:42:57.514] - [INFO] - message sent: took 1,089,215
+21/09/2013 02:42:57.860] - [INFO] - message sent: took 1,024,787
+21/09/2013 02:42:58.204] - [INFO] - message sent: took 1,032,485
+21/09/2013 02:42:58.549] - [INFO] - message sent: took 1,260,620
+21/09/2013 02:42:58.899] - [INFO] - message sent: took 1,137,030
+21/09/2013 02:42:59.245] - [INFO] - message sent: took 1,285,339
+21/09/2013 02:42:59.591] - [INFO] - message sent: took 1,058,419
+21/09/2013 02:42:59.936] - [INFO] - message sent: took 1,038,969
+21/09/2013 02:43:00.282] - [INFO] - message sent: took 1,053,961
+21/09/2013 02:43:00.626] - [INFO] - message sent: took 2,418,317
+21/09/2013 02:43:00.971] - [INFO] - message sent: took 1,068,144
+21/09/2013 02:43:01.318] - [INFO] - message sent: took 3,054,098
+21/09/2013 02:43:01.666] - [INFO] - message sent: took 1,214,427
+21/09/2013 02:43:02.010] - [INFO] - message sent: took 1,211,184
+21/09/2013 02:43:02.355] - [INFO] - message sent: took 1,254,542
+21/09/2013 02:43:02.701] - [INFO] - message sent: took 1,214,831
+21/09/2013 02:43:03.046] - [INFO] - message sent: took 1,229,824
+21/09/2013 02:43:03.394] - [INFO] - message sent: took 3,013,171
+21/09/2013 02:43:03.737] - [INFO] - message sent: took 1,388,668
+21/09/2013 02:43:04.084] - [INFO] - message sent: took 1,218,884
+21/09/2013 02:43:04.430] - [INFO] - message sent: took 1,187,277
+21/09/2013 02:43:04.775] - [INFO] - message sent: took 1,228,609
+21/09/2013 02:43:05.124] - [INFO] - message sent: took 4,648,210
+21/09/2013 02:43:05.471] - [INFO] - message sent: took 1,263,862
+21/09/2013 02:43:05.817] - [INFO] - message sent: took 1,470,117
+21/09/2013 02:43:06.165] - [INFO] - message sent: took 1,199,434
+21/09/2013 02:43:06.512] - [INFO] - message sent: took 1,324,645
+21/09/2013 02:43:06.856] - [INFO] - message sent: took 1,392,720
+21/09/2013 02:43:07.202] - [INFO] - message sent: took 3,032,622
+21/09/2013 02:43:07.548] - [INFO] - message sent: took 1,224,961
+21/09/2013 02:43:07.891] - [INFO] - message sent: took 715,608
+21/09/2013 02:43:08.238] - [INFO] - message sent: took 1,014,250
+21/09/2013 02:43:08.585] - [INFO] - message sent: took 2,542,718
+21/09/2013 02:43:08.944] - [INFO] - message sent: took 15,697,989
+21/09/2013 02:43:09.294] - [INFO] - message sent: took 1,004,931
+21/09/2013 02:43:09.642] - [INFO] - message sent: took 1,295,064
+21/09/2013 02:43:09.990] - [INFO] - message sent: took 2,828,799
+21/09/2013 02:43:10.337] - [INFO] - message sent: took 1,049,504
+21/09/2013 02:43:10.682] - [INFO] - message sent: took 1,206,727
+21/09/2013 02:43:11.026] - [INFO] - message sent: took 1,233,067
+21/09/2013 02:43:11.375] - [INFO] - message sent: took 1,169,852
+21/09/2013 02:43:11.724] - [INFO] - message sent: took 1,027,217
+21/09/2013 02:43:12.069] - [INFO] - message sent: took 1,038,563
+21/09/2013 02:43:12.417] - [INFO] - message sent: took 1,043,831
+21/09/2013 02:43:12.763] - [INFO] - message sent: took 1,040,184
+21/09/2013 02:43:13.111] - [INFO] - message sent: took 2,859,595
+21/09/2013 02:43:13.454] - [INFO] - message sent: took 1,004,120
+21/09/2013 02:43:13.804] - [INFO] - message sent: took 1,512,664
+21/09/2013 02:43:14.151] - [INFO] - message sent: took 1,053,961
+21/09/2013 02:43:14.496] - [INFO] - message sent: took 1,288,580
+21/09/2013 02:43:14.842] - [INFO] - message sent: took 2,065,376
+21/09/2013 02:43:15.201] - [INFO] - message sent: took 1,026,002
+21/09/2013 02:43:15.545] - [INFO] - message sent: took 2,846,628
+21/09/2013 02:43:15.891] - [INFO] - message sent: took 1,161,748
+21/09/2013 02:43:16.235] - [INFO] - message sent: took 995,611
+21/09/2013 02:43:16.580] - [INFO] - message sent: took 1,096,915
+21/09/2013 02:43:16.927] - [INFO] - message sent: took 1,152,429
+21/09/2013 02:43:17.274] - [INFO] - message sent: took 1,119,606
+21/09/2013 02:43:17.636] - [INFO] - message sent: took 3,468,632
+21/09/2013 02:43:17.982] - [INFO] - message sent: took 1,132,168
+21/09/2013 02:43:18.328] - [INFO] - message sent: took 1,833,593
+21/09/2013 02:43:18.673] - [INFO] - message sent: took 1,156,480
+21/09/2013 02:43:19.018] - [INFO] - message sent: took 1,695,011
+21/09/2013 02:43:19.239] - [INFO] - [id: 0xb48170e9, /127.0.0.1:2217 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:43:19.240] - [INFO] - [id: 0xb48170e9, /127.0.0.1:2217 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:43:19.241] - [INFO] - [id: 0xb48170e9, /127.0.0.1:2217 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 02:45:40.661] - [INFO] - [id: 0x16d6a95f] OPEN
+21/09/2013 02:45:40.672] - [INFO] - [id: 0x16d6a95f, /127.0.0.1:2218 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:2218
+21/09/2013 02:45:40.674] - [INFO] - [id: 0x16d6a95f, /127.0.0.1:2218 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 02:45:41.686] - [INFO] - message sent: took 7,106,643
+21/09/2013 02:45:42.041] - [INFO] - message sent: took 2,345,378
+21/09/2013 02:45:42.399] - [INFO] - message sent: took 3,425,273
+21/09/2013 02:45:42.765] - [INFO] - message sent: took 4,943,610
+21/09/2013 02:45:43.146] - [INFO] - message sent: took 19,176,752
+21/09/2013 02:45:43.496] - [INFO] - message sent: took 1,355,035
+21/09/2013 02:45:43.848] - [INFO] - message sent: took 1,514,690
+21/09/2013 02:45:44.200] - [INFO] - message sent: took 1,160,127
+21/09/2013 02:45:44.542] - [INFO] - message sent: took 1,340,448
+21/09/2013 02:45:44.893] - [INFO] - message sent: took 1,053,962
+21/09/2013 02:45:45.243] - [INFO] - message sent: took 1,032,485
+21/09/2013 02:45:45.589] - [INFO] - message sent: took 873,236
+21/09/2013 02:45:45.940] - [INFO] - message sent: took 1,017,087
+21/09/2013 02:45:46.285] - [INFO] - message sent: took 1,319,377
+21/09/2013 02:45:46.627] - [INFO] - message sent: took 852,975
+21/09/2013 02:45:46.973] - [INFO] - message sent: took 1,807,254
+21/09/2013 02:45:47.319] - [INFO] - message sent: took 1,109,476
+21/09/2013 02:45:47.665] - [INFO] - message sent: took 988,316
+21/09/2013 02:45:48.013] - [INFO] - message sent: took 1,472,548
+21/09/2013 02:45:48.394] - [INFO] - message sent: took 1,150,808
+21/09/2013 02:45:48.776] - [INFO] - message sent: took 902,006
+21/09/2013 02:45:49.127] - [INFO] - message sent: took 1,016,277
+21/09/2013 02:45:49.476] - [INFO] - message sent: took 1,091,241
+21/09/2013 02:45:49.833] - [INFO] - message sent: took 1,036,537
+21/09/2013 02:45:50.183] - [INFO] - message sent: took 3,715,001
+21/09/2013 02:45:50.530] - [INFO] - message sent: took 1,163,775
+21/09/2013 02:45:50.885] - [INFO] - message sent: took 1,341,258
+21/09/2013 02:45:51.236] - [INFO] - message sent: took 1,068,954
+21/09/2013 02:45:51.584] - [INFO] - message sent: took 1,021,950
+21/09/2013 02:45:51.932] - [INFO] - message sent: took 1,063,687
+21/09/2013 02:45:52.282] - [INFO] - message sent: took 1,096,914
+21/09/2013 02:45:52.630] - [INFO] - message sent: took 5,612,619
+21/09/2013 02:45:52.983] - [INFO] - message sent: took 1,059,230
+21/09/2013 02:45:53.336] - [INFO] - message sent: took 1,156,885
+21/09/2013 02:45:53.681] - [INFO] - message sent: took 1,051,530
+21/09/2013 02:45:54.030] - [INFO] - message sent: took 1,074,628
+21/09/2013 02:45:54.375] - [INFO] - message sent: took 1,023,165
+21/09/2013 02:45:54.727] - [INFO] - message sent: took 1,021,139
+21/09/2013 02:45:55.078] - [INFO] - message sent: took 1,271,562
+21/09/2013 02:45:55.450] - [INFO] - message sent: took 29,137,721
+21/09/2013 02:45:55.792] - [INFO] - message sent: took 1,094,483
+21/09/2013 02:45:56.138] - [INFO] - message sent: took 1,020,734
+21/09/2013 02:45:56.486] - [INFO] - message sent: took 1,193,760
+21/09/2013 02:45:56.838] - [INFO] - message sent: took 1,127,305
+21/09/2013 02:45:57.200] - [INFO] - message sent: took 1,034,106
+21/09/2013 02:45:57.550] - [INFO] - message sent: took 1,289,391
+21/09/2013 02:45:57.894] - [INFO] - message sent: took 1,030,054
+21/09/2013 02:45:58.243] - [INFO] - message sent: took 1,032,486
+21/09/2013 02:45:58.589] - [INFO] - message sent: took 1,050,720
+21/09/2013 02:45:58.939] - [INFO] - message sent: took 1,276,424
+21/09/2013 02:45:59.285] - [INFO] - message sent: took 1,138,246
+21/09/2013 02:45:59.632] - [INFO] - message sent: took 1,019,518
+21/09/2013 02:45:59.984] - [INFO] - message sent: took 1,019,924
+21/09/2013 02:46:00.329] - [INFO] - message sent: took 1,215,642
+21/09/2013 02:46:00.678] - [INFO] - message sent: took 1,050,314
+21/09/2013 02:46:01.025] - [INFO] - message sent: took 1,163,775
+21/09/2013 02:46:01.370] - [INFO] - message sent: took 1,191,329
+21/09/2013 02:46:01.722] - [INFO] - message sent: took 1,274,398
+21/09/2013 02:46:02.069] - [INFO] - message sent: took 1,488,757
+21/09/2013 02:46:02.416] - [INFO] - message sent: took 1,319,782
+21/09/2013 02:46:02.767] - [INFO] - message sent: took 1,036,942
+21/09/2013 02:46:03.112] - [INFO] - message sent: took 1,032,486
+21/09/2013 02:46:03.462] - [INFO] - message sent: took 1,218,478
+21/09/2013 02:46:03.810] - [INFO] - message sent: took 1,192,139
+21/09/2013 02:46:04.157] - [INFO] - message sent: took 1,263,457
+21/09/2013 02:46:04.503] - [INFO] - message sent: took 1,513,879
+21/09/2013 02:46:04.852] - [INFO] - message sent: took 1,157,696
+21/09/2013 02:46:05.200] - [INFO] - message sent: took 1,453,502
+21/09/2013 02:46:05.553] - [INFO] - message sent: took 3,298,037
+21/09/2013 02:46:05.901] - [INFO] - message sent: took 1,041,805
+21/09/2013 02:46:06.248] - [INFO] - message sent: took 1,181,604
+21/09/2013 02:46:06.597] - [INFO] - message sent: took 1,034,916
+21/09/2013 02:46:06.943] - [INFO] - message sent: took 1,449,045
+21/09/2013 02:46:07.289] - [INFO] - message sent: took 1,306,409
+21/09/2013 02:46:07.633] - [INFO] - message sent: took 1,210,374
+21/09/2013 02:46:08.018] - [INFO] - message sent: took 45,155,018
+21/09/2013 02:46:08.388] - [INFO] - message sent: took 35,366,670
+21/09/2013 02:46:08.734] - [INFO] - message sent: took 3,059,771
+21/09/2013 02:46:09.080] - [INFO] - message sent: took 1,372,460
+21/09/2013 02:46:09.425] - [INFO] - message sent: took 2,522,457
+21/09/2013 02:46:09.769] - [INFO] - message sent: took 1,201,054
+21/09/2013 02:46:10.115] - [INFO] - message sent: took 1,336,800
+21/09/2013 02:46:10.461] - [INFO] - message sent: took 1,214,021
+21/09/2013 02:46:10.810] - [INFO] - message sent: took 1,300,736
+21/09/2013 02:46:11.158] - [INFO] - message sent: took 1,556,022
+21/09/2013 02:46:11.500] - [INFO] - message sent: took 1,567,773
+21/09/2013 02:46:11.851] - [INFO] - message sent: took 3,165,936
+21/09/2013 02:46:12.204] - [INFO] - message sent: took 981,833
+21/09/2013 02:46:12.557] - [INFO] - message sent: took 1,238,739
+21/09/2013 02:46:12.903] - [INFO] - message sent: took 1,043,021
+21/09/2013 02:46:13.250] - [INFO] - message sent: took 1,230,635
+21/09/2013 02:46:13.598] - [INFO] - message sent: took 1,420,680
+21/09/2013 02:46:13.943] - [INFO] - message sent: took 1,175,931
+21/09/2013 02:46:14.292] - [INFO] - message sent: took 3,420,006
+21/09/2013 02:46:14.635] - [INFO] - message sent: took 2,554,874
+21/09/2013 02:46:14.982] - [INFO] - message sent: took 2,475,452
+21/09/2013 02:46:15.329] - [INFO] - message sent: took 1,245,223
+21/09/2013 02:46:15.676] - [INFO] - message sent: took 1,482,678
+21/09/2013 02:46:16.022] - [INFO] - message sent: took 1,199,434
+21/09/2013 02:46:16.369] - [INFO] - message sent: took 1,178,362
+21/09/2013 02:46:16.716] - [INFO] - message sent: took 1,177,957
+21/09/2013 02:46:17.064] - [INFO] - message sent: took 1,300,737
+21/09/2013 02:46:17.412] - [INFO] - message sent: took 1,330,318
+21/09/2013 02:46:17.759] - [INFO] - message sent: took 2,016,750
+21/09/2013 02:46:18.104] - [INFO] - message sent: took 1,194,165
+21/09/2013 02:46:18.452] - [INFO] - message sent: took 1,029,243
+21/09/2013 02:46:18.801] - [INFO] - message sent: took 2,024,044
+21/09/2013 02:46:19.189] - [INFO] - message sent: took 1,230,634
+21/09/2013 02:46:19.532] - [INFO] - message sent: took 1,254,948
+21/09/2013 02:46:19.879] - [INFO] - message sent: took 4,246,642
+21/09/2013 02:46:20.224] - [INFO] - message sent: took 1,264,268
+21/09/2013 02:46:20.582] - [INFO] - message sent: took 3,409,065
+21/09/2013 02:46:20.932] - [INFO] - message sent: took 1,899,643
+21/09/2013 02:46:21.277] - [INFO] - message sent: took 1,401,230
+21/09/2013 02:46:21.624] - [INFO] - message sent: took 3,667,592
+21/09/2013 02:46:21.969] - [INFO] - message sent: took 1,250,491
+21/09/2013 02:46:22.315] - [INFO] - message sent: took 1,352,604
+21/09/2013 02:46:22.660] - [INFO] - message sent: took 1,039,374
+21/09/2013 02:46:23.003] - [INFO] - message sent: took 1,504,154
+21/09/2013 02:46:23.350] - [INFO] - message sent: took 1,234,282
+21/09/2013 02:46:23.695] - [INFO] - message sent: took 1,217,668
+21/09/2013 02:46:24.042] - [INFO] - message sent: took 2,507,464
+21/09/2013 02:46:24.387] - [INFO] - message sent: took 1,226,988
+21/09/2013 02:46:24.734] - [INFO] - message sent: took 1,226,177
+21/09/2013 02:46:25.087] - [INFO] - message sent: took 1,312,893
+21/09/2013 02:46:25.433] - [INFO] - message sent: took 1,184,441
+21/09/2013 02:46:25.773] - [INFO] - message sent: took 1,916,662
+21/09/2013 02:46:26.120] - [INFO] - message sent: took 2,258,258
+21/09/2013 02:46:26.465] - [INFO] - message sent: took 1,167,422
+21/09/2013 02:46:26.811] - [INFO] - message sent: took 1,299,927
+21/09/2013 02:46:27.159] - [INFO] - message sent: took 1,179,578
+21/09/2013 02:46:27.504] - [INFO] - message sent: took 1,166,611
+21/09/2013 02:46:27.850] - [INFO] - message sent: took 2,540,286
+21/09/2013 02:46:28.195] - [INFO] - message sent: took 1,323,429
+21/09/2013 02:46:28.540] - [INFO] - message sent: took 1,570,204
+21/09/2013 02:46:28.886] - [INFO] - message sent: took 1,945,027
+21/09/2013 02:46:29.230] - [INFO] - message sent: took 1,748,093
+21/09/2013 02:46:29.577] - [INFO] - message sent: took 2,280,950
+21/09/2013 02:46:29.921] - [INFO] - message sent: took 1,549,944
+21/09/2013 02:46:30.270] - [INFO] - message sent: took 1,502,938
+21/09/2013 02:46:30.614] - [INFO] - message sent: took 1,642,738
+21/09/2013 02:46:30.957] - [INFO] - message sent: took 1,342,069
+21/09/2013 02:46:31.301] - [INFO] - message sent: took 1,548,323
+21/09/2013 02:46:31.645] - [INFO] - message sent: took 2,784,225
+21/09/2013 02:46:31.990] - [INFO] - message sent: took 1,752,550
+21/09/2013 02:46:32.336] - [INFO] - message sent: took 1,321,808
+21/09/2013 02:46:32.680] - [INFO] - message sent: took 1,913,015
+21/09/2013 02:46:33.026] - [INFO] - message sent: took 1,526,036
+21/09/2013 02:46:33.371] - [INFO] - message sent: took 1,555,211
+21/09/2013 02:46:33.715] - [INFO] - message sent: took 1,051,935
+21/09/2013 02:46:34.062] - [INFO] - message sent: took 1,553,185
+21/09/2013 02:46:34.406] - [INFO] - message sent: took 1,547,107
+21/09/2013 02:46:34.751] - [INFO] - message sent: took 1,630,987
+21/09/2013 02:46:35.096] - [INFO] - message sent: took 1,675,154
+21/09/2013 02:46:35.441] - [INFO] - message sent: took 1,571,015
+21/09/2013 02:46:35.785] - [INFO] - message sent: took 1,182,009
+21/09/2013 02:46:36.127] - [INFO] - message sent: took 1,578,309
+21/09/2013 02:46:36.471] - [INFO] - message sent: took 1,579,119
+21/09/2013 02:46:36.815] - [INFO] - message sent: took 1,565,747
+21/09/2013 02:46:37.159] - [INFO] - message sent: took 1,563,316
+21/09/2013 02:46:37.505] - [INFO] - message sent: took 1,434,052
+21/09/2013 02:46:37.878] - [INFO] - message sent: took 1,356,251
+21/09/2013 02:46:38.221] - [INFO] - message sent: took 1,552,374
+21/09/2013 02:46:38.566] - [INFO] - message sent: took 2,550,822
+21/09/2013 02:46:38.909] - [INFO] - message sent: took 1,548,322
+21/09/2013 02:46:39.254] - [INFO] - message sent: took 1,356,656
+21/09/2013 02:46:39.597] - [INFO] - message sent: took 1,181,198
+21/09/2013 02:46:39.951] - [INFO] - message sent: took 1,966,503
+21/09/2013 02:46:40.313] - [INFO] - message sent: took 3,293,174
+21/09/2013 02:46:40.656] - [INFO] - message sent: took 1,338,827
+21/09/2013 02:46:41.000] - [INFO] - message sent: took 1,788,614
+21/09/2013 02:46:41.345] - [INFO] - message sent: took 1,285,744
+21/09/2013 02:46:41.687] - [INFO] - message sent: took 1,577,498
+21/09/2013 02:46:42.030] - [INFO] - message sent: took 1,360,709
+21/09/2013 02:46:42.373] - [INFO] - message sent: took 1,543,460
+21/09/2013 02:46:42.717] - [INFO] - message sent: took 1,569,394
+21/09/2013 02:46:43.063] - [INFO] - message sent: took 1,885,461
+21/09/2013 02:46:43.407] - [INFO] - message sent: took 1,405,282
+21/09/2013 02:46:43.751] - [INFO] - message sent: took 1,530,493
+21/09/2013 02:46:44.095] - [INFO] - message sent: took 1,547,917
+21/09/2013 02:46:44.444] - [INFO] - message sent: took 2,773,285
+21/09/2013 02:46:44.785] - [INFO] - message sent: took 1,370,433
+21/09/2013 02:46:45.129] - [INFO] - message sent: took 1,863,984
+21/09/2013 02:46:45.474] - [INFO] - message sent: took 1,822,247
+21/09/2013 02:46:45.820] - [INFO] - message sent: took 2,644,021
+21/09/2013 02:46:46.160] - [INFO] - message sent: took 1,628,555
+21/09/2013 02:46:46.503] - [INFO] - message sent: took 1,556,427
+21/09/2013 02:46:46.846] - [INFO] - message sent: took 2,799,218
+21/09/2013 02:46:47.192] - [INFO] - message sent: took 3,631,123
+21/09/2013 02:46:47.537] - [INFO] - message sent: took 2,200,717
+21/09/2013 02:46:47.881] - [INFO] - message sent: took 1,338,827
+21/09/2013 02:46:48.238] - [INFO] - message sent: took 17,194,039
+21/09/2013 02:46:48.579] - [INFO] - message sent: took 1,040,590
+21/09/2013 02:46:48.925] - [INFO] - message sent: took 1,438,104
+21/09/2013 02:46:49.270] - [INFO] - message sent: took 1,367,192
+21/09/2013 02:46:49.609] - [INFO] - message sent: took 1,566,152
+21/09/2013 02:46:49.955] - [INFO] - message sent: took 1,746,067
+21/09/2013 02:46:50.303] - [INFO] - message sent: took 1,361,113
+21/09/2013 02:46:50.645] - [INFO] - message sent: took 1,022,355
+21/09/2013 02:46:50.984] - [INFO] - message sent: took 1,280,071
+21/09/2013 02:46:51.327] - [INFO] - message sent: took 1,202,676
+21/09/2013 02:46:51.700] - [INFO] - message sent: took 31,109,087
+21/09/2013 02:46:52.039] - [INFO] - message sent: took 1,477,815
+21/09/2013 02:46:52.389] - [INFO] - message sent: took 1,486,325
+21/09/2013 02:46:52.730] - [INFO] - message sent: took 1,360,709
+21/09/2013 02:46:53.080] - [INFO] - message sent: took 1,286,554
+21/09/2013 02:46:53.431] - [INFO] - message sent: took 1,818,195
+21/09/2013 02:46:53.776] - [INFO] - message sent: took 1,752,145
+21/09/2013 02:46:54.122] - [INFO] - message sent: took 1,316,135
+21/09/2013 02:46:54.466] - [INFO] - message sent: took 1,786,994
+21/09/2013 02:46:54.816] - [INFO] - message sent: took 2,394,815
+21/09/2013 02:46:55.196] - [INFO] - message sent: took 2,170,326
+21/09/2013 02:46:55.541] - [INFO] - message sent: took 2,083,610
+21/09/2013 02:46:55.888] - [INFO] - message sent: took 2,024,044
+21/09/2013 02:46:56.235] - [INFO] - message sent: took 1,984,333
+21/09/2013 02:46:56.581] - [INFO] - message sent: took 1,224,151
+21/09/2013 02:46:56.925] - [INFO] - message sent: took 1,536,167
+21/09/2013 02:46:57.275] - [INFO] - message sent: took 2,508,680
+21/09/2013 02:46:57.623] - [INFO] - message sent: took 1,185,251
+21/09/2013 02:46:57.967] - [INFO] - message sent: took 1,047,884
+21/09/2013 02:46:58.321] - [INFO] - message sent: took 846,897
+21/09/2013 02:46:58.671] - [INFO] - message sent: took 1,282,097
+21/09/2013 02:46:59.016] - [INFO] - message sent: took 1,389,884
+21/09/2013 02:46:59.360] - [INFO] - message sent: took 1,308,031
+21/09/2013 02:46:59.704] - [INFO] - message sent: took 1,325,049
+21/09/2013 02:47:00.050] - [INFO] - message sent: took 1,052,340
+21/09/2013 02:47:00.395] - [INFO] - message sent: took 1,893,565
+21/09/2013 02:47:00.741] - [INFO] - message sent: took 1,206,727
+21/09/2013 02:47:01.083] - [INFO] - message sent: took 1,349,363
+21/09/2013 02:47:01.419] - [INFO] - message sent: took 1,003,310
+21/09/2013 02:47:01.755] - [INFO] - message sent: took 1,122,038
+21/09/2013 02:47:02.088] - [INFO] - message sent: took 855,407
+21/09/2013 02:47:02.455] - [INFO] - message sent: took 1,006,552
+21/09/2013 02:47:02.790] - [INFO] - message sent: took 1,940,165
+21/09/2013 02:47:03.136] - [INFO] - message sent: took 1,840,482
+21/09/2013 02:47:03.481] - [INFO] - message sent: took 1,727,427
+21/09/2013 02:47:03.825] - [INFO] - message sent: took 1,311,272
+21/09/2013 02:47:04.177] - [INFO] - message sent: took 1,539,407
+21/09/2013 02:47:04.528] - [INFO] - message sent: took 1,969,745
+21/09/2013 02:47:04.882] - [INFO] - message sent: took 1,308,436
+21/09/2013 02:47:05.238] - [INFO] - message sent: took 1,588,033
+21/09/2013 02:47:05.590] - [INFO] - message sent: took 1,455,123
+21/09/2013 02:47:05.942] - [INFO] - message sent: took 1,389,479
+21/09/2013 02:47:06.293] - [INFO] - message sent: took 1,508,206
+21/09/2013 02:47:06.655] - [INFO] - message sent: took 1,611,941
+21/09/2013 02:47:07.006] - [INFO] - message sent: took 1,558,048
+21/09/2013 02:47:07.358] - [INFO] - message sent: took 1,211,185
+21/09/2013 02:47:07.714] - [INFO] - message sent: took 1,579,524
+21/09/2013 02:47:08.063] - [INFO] - message sent: took 1,662,593
+21/09/2013 02:47:08.413] - [INFO] - message sent: took 1,580,335
+21/09/2013 02:47:08.765] - [INFO] - message sent: took 1,713,245
+21/09/2013 02:47:09.128] - [INFO] - message sent: took 1,492,809
+21/09/2013 02:47:09.472] - [INFO] - message sent: took 1,629,770
+21/09/2013 02:47:09.815] - [INFO] - message sent: took 1,485,920
+21/09/2013 02:47:10.202] - [INFO] - message sent: took 1,305,600
+21/09/2013 02:47:10.548] - [INFO] - message sent: took 1,158,102
+21/09/2013 02:47:10.896] - [INFO] - message sent: took 1,307,626
+21/09/2013 02:47:11.243] - [INFO] - message sent: took 1,346,526
+21/09/2013 02:47:11.587] - [INFO] - message sent: took 1,426,759
+21/09/2013 02:47:11.932] - [INFO] - message sent: took 1,545,081
+21/09/2013 02:47:12.278] - [INFO] - message sent: took 1,474,979
+21/09/2013 02:47:12.626] - [INFO] - message sent: took 3,732,021
+21/09/2013 02:47:12.971] - [INFO] - message sent: took 1,583,171
+21/09/2013 02:47:13.317] - [INFO] - message sent: took 1,310,462
+21/09/2013 02:47:13.663] - [INFO] - message sent: took 1,514,690
+21/09/2013 02:47:14.031] - [INFO] - message sent: took 865,131
+21/09/2013 02:47:14.386] - [INFO] - message sent: took 854,191
+21/09/2013 02:47:14.743] - [INFO] - message sent: took 1,072,601
+21/09/2013 02:47:15.089] - [INFO] - message sent: took 1,222,935
+21/09/2013 02:47:15.432] - [INFO] - message sent: took 1,190,519
+21/09/2013 02:47:15.787] - [INFO] - message sent: took 790,167
+21/09/2013 02:47:16.131] - [INFO] - message sent: took 1,178,768
+21/09/2013 02:47:16.477] - [INFO] - message sent: took 1,321,403
+21/09/2013 02:47:16.822] - [INFO] - message sent: took 982,644
+21/09/2013 02:47:17.170] - [INFO] - message sent: took 1,640,711
+21/09/2013 02:47:17.519] - [INFO] - message sent: took 3,956,104
+21/09/2013 02:47:17.865] - [INFO] - message sent: took 1,323,024
+21/09/2013 02:47:18.210] - [INFO] - message sent: took 689,675
+21/09/2013 02:47:18.559] - [INFO] - message sent: took 2,170,326
+21/09/2013 02:47:18.903] - [INFO] - message sent: took 1,258,595
+21/09/2013 02:47:19.254] - [INFO] - message sent: took 986,291
+21/09/2013 02:47:19.592] - [INFO] - message sent: took 931,992
+21/09/2013 02:47:19.938] - [INFO] - message sent: took 1,550,348
+21/09/2013 02:47:20.282] - [INFO] - message sent: took 1,461,607
+21/09/2013 02:47:20.625] - [INFO] - message sent: took 970,082
+21/09/2013 02:47:20.969] - [INFO] - message sent: took 970,082
+21/09/2013 02:47:21.342] - [INFO] - message sent: took 1,500,507
+21/09/2013 02:47:21.684] - [INFO] - message sent: took 1,088,000
+21/09/2013 02:47:22.030] - [INFO] - message sent: took 916,188
+21/09/2013 02:47:22.375] - [INFO] - message sent: took 801,919
+21/09/2013 02:47:22.722] - [INFO] - message sent: took 1,204,701
+21/09/2013 02:47:23.067] - [INFO] - message sent: took 1,459,581
+21/09/2013 02:47:23.410] - [INFO] - message sent: took 963,194
+21/09/2013 02:47:23.754] - [INFO] - message sent: took 976,566
+21/09/2013 02:47:24.101] - [INFO] - message sent: took 974,135
+21/09/2013 02:47:24.441] - [INFO] - message sent: took 941,312
+21/09/2013 02:47:24.775] - [INFO] - message sent: took 705,477
+21/09/2013 02:47:25.111] - [INFO] - message sent: took 643,075
+21/09/2013 02:47:25.444] - [INFO] - message sent: took 1,076,248
+21/09/2013 02:47:25.777] - [INFO] - message sent: took 680,759
+21/09/2013 02:47:26.125] - [INFO] - message sent: took 4,597,963
+21/09/2013 02:47:26.472] - [INFO] - message sent: took 1,376,107
+21/09/2013 02:47:26.819] - [INFO] - message sent: took 1,664,619
+21/09/2013 02:47:27.165] - [INFO] - message sent: took 640,238
+21/09/2013 02:47:27.508] - [INFO] - message sent: took 1,382,185
+21/09/2013 02:47:27.854] - [INFO] - message sent: took 985,885
+21/09/2013 02:47:28.196] - [INFO] - message sent: took 723,307
+21/09/2013 02:47:28.545] - [INFO] - message sent: took 1,632,607
+21/09/2013 02:47:28.891] - [INFO] - message sent: took 929,561
+21/09/2013 02:47:29.236] - [INFO] - message sent: took 1,039,374
+21/09/2013 02:47:29.581] - [INFO] - message sent: took 846,897
+21/09/2013 02:47:29.919] - [INFO] - message sent: took 712,366
+21/09/2013 02:47:30.263] - [INFO] - message sent: took 622,409
+21/09/2013 02:47:30.607] - [INFO] - message sent: took 901,196
+21/09/2013 02:47:30.950] - [INFO] - message sent: took 906,869
+21/09/2013 02:47:31.295] - [INFO] - message sent: took 770,312
+21/09/2013 02:47:31.636] - [INFO] - message sent: took 1,060,445
+21/09/2013 02:47:31.988] - [INFO] - message sent: took 718,445
+21/09/2013 02:47:32.329] - [INFO] - message sent: took 745,189
+21/09/2013 02:47:32.670] - [INFO] - message sent: took 876,073
+21/09/2013 02:47:33.021] - [INFO] - message sent: took 1,050,720
+21/09/2013 02:47:33.368] - [INFO] - message sent: took 989,533
+21/09/2013 02:47:33.714] - [INFO] - message sent: took 1,159,723
+21/09/2013 02:47:34.059] - [INFO] - message sent: took 985,075
+21/09/2013 02:47:34.405] - [INFO] - message sent: took 889,040
+21/09/2013 02:47:34.755] - [INFO] - message sent: took 886,203
+21/09/2013 02:47:35.100] - [INFO] - message sent: took 1,162,964
+21/09/2013 02:47:35.445] - [INFO] - message sent: took 951,847
+21/09/2013 02:47:35.790] - [INFO] - message sent: took 1,442,561
+21/09/2013 02:47:36.143] - [INFO] - message sent: took 8,717,773
+21/09/2013 02:47:36.488] - [INFO] - message sent: took 1,107,855
+21/09/2013 02:47:36.834] - [INFO] - message sent: took 985,480
+21/09/2013 02:47:37.182] - [INFO] - message sent: took 908,490
+21/09/2013 02:47:37.528] - [INFO] - message sent: took 1,121,227
+21/09/2013 02:47:37.872] - [INFO] - message sent: took 967,651
+21/09/2013 02:47:38.222] - [INFO] - message sent: took 671,034
+21/09/2013 02:47:38.563] - [INFO] - message sent: took 978,186
+21/09/2013 02:47:38.912] - [INFO] - message sent: took 1,149,187
+21/09/2013 02:47:39.259] - [INFO] - message sent: took 946,580
+21/09/2013 02:47:39.604] - [INFO] - message sent: took 2,614,441
+21/09/2013 02:47:39.951] - [INFO] - message sent: took 1,205,511
+21/09/2013 02:47:40.296] - [INFO] - message sent: took 919,025
+21/09/2013 02:47:40.643] - [INFO] - message sent: took 924,698
+21/09/2013 02:47:40.989] - [INFO] - message sent: took 944,148
+21/09/2013 02:47:41.335] - [INFO] - message sent: took 997,231
+21/09/2013 02:47:41.680] - [INFO] - message sent: took 949,011
+21/09/2013 02:47:42.023] - [INFO] - message sent: took 1,130,952
+21/09/2013 02:47:42.371] - [INFO] - message sent: took 1,433,242
+21/09/2013 02:47:42.717] - [INFO] - message sent: took 1,008,578
+21/09/2013 02:47:43.074] - [INFO] - message sent: took 17,961,514
+21/09/2013 02:47:43.415] - [INFO] - message sent: took 680,760
+21/09/2013 02:47:43.756] - [INFO] - message sent: took 1,521,983
+21/09/2013 02:47:44.103] - [INFO] - message sent: took 2,169,111
+21/09/2013 02:47:44.447] - [INFO] - message sent: took 1,242,386
+21/09/2013 02:47:44.791] - [INFO] - message sent: took 1,267,104
+21/09/2013 02:47:45.134] - [INFO] - message sent: took 1,223,746
+21/09/2013 02:47:45.479] - [INFO] - message sent: took 1,479,841
+21/09/2013 02:47:45.823] - [INFO] - message sent: took 1,245,223
+21/09/2013 02:47:46.182] - [INFO] - message sent: took 13,669,893
+21/09/2013 02:47:46.516] - [INFO] - message sent: took 1,274,803
+21/09/2013 02:47:46.860] - [INFO] - message sent: took 1,276,829
+21/09/2013 02:47:47.202] - [INFO] - message sent: took 1,254,947
+21/09/2013 02:47:47.547] - [INFO] - message sent: took 1,331,533
+21/09/2013 02:47:47.894] - [INFO] - message sent: took 1,825,084
+21/09/2013 02:47:48.239] - [INFO] - message sent: took 1,588,439
+21/09/2013 02:47:48.582] - [INFO] - message sent: took 1,233,876
+21/09/2013 02:47:48.927] - [INFO] - message sent: took 2,243,265
+21/09/2013 02:47:49.276] - [INFO] - message sent: took 1,034,917
+21/09/2013 02:47:49.625] - [INFO] - message sent: took 2,107,924
+21/09/2013 02:47:49.969] - [INFO] - message sent: took 1,372,864
+21/09/2013 02:47:50.318] - [INFO] - message sent: took 1,615,183
+21/09/2013 02:47:50.660] - [INFO] - message sent: took 1,372,865
+21/09/2013 02:47:51.001] - [INFO] - message sent: took 1,229,014
+21/09/2013 02:47:51.345] - [INFO] - message sent: took 1,643,548
+21/09/2013 02:47:51.691] - [INFO] - message sent: took 1,949,484
+21/09/2013 02:47:52.037] - [INFO] - message sent: took 1,019,923
+21/09/2013 02:47:52.387] - [INFO] - message sent: took 3,738,909
+21/09/2013 02:47:52.733] - [INFO] - message sent: took 2,528,130
+21/09/2013 02:47:53.078] - [INFO] - message sent: took 1,286,960
+21/09/2013 02:47:53.427] - [INFO] - message sent: took 4,882,018
+21/09/2013 02:47:53.769] - [INFO] - message sent: took 734,653
+21/09/2013 02:47:54.114] - [INFO] - message sent: took 1,802,392
+21/09/2013 02:47:54.456] - [INFO] - message sent: took 1,283,718
+21/09/2013 02:47:54.794] - [INFO] - message sent: took 1,576,688
+21/09/2013 02:47:55.138] - [INFO] - message sent: took 1,714,866
+21/09/2013 02:47:55.486] - [INFO] - message sent: took 1,233,877
+21/09/2013 02:47:55.824] - [INFO] - message sent: took 892,686
+21/09/2013 02:47:56.195] - [INFO] - message sent: took 1,142,703
+21/09/2013 02:47:56.541] - [INFO] - message sent: took 1,293,848
+21/09/2013 02:47:56.919] - [INFO] - message sent: took 32,661,056
+21/09/2013 02:47:57.261] - [INFO] - message sent: took 1,688,527
+21/09/2013 02:47:57.608] - [INFO] - message sent: took 1,661,783
+21/09/2013 02:47:57.956] - [INFO] - message sent: took 1,242,386
+21/09/2013 02:47:58.299] - [INFO] - message sent: took 1,534,140
+21/09/2013 02:47:58.645] - [INFO] - message sent: took 1,460,796
+21/09/2013 02:47:58.990] - [INFO] - message sent: took 1,530,088
+21/09/2013 02:47:59.336] - [INFO] - message sent: took 888,634
+21/09/2013 02:47:59.679] - [INFO] - message sent: took 1,113,933
+21/09/2013 02:48:00.025] - [INFO] - message sent: took 1,643,953
+21/09/2013 02:48:00.371] - [INFO] - message sent: took 1,510,637
+21/09/2013 02:48:00.716] - [INFO] - message sent: took 1,446,209
+21/09/2013 02:48:01.062] - [INFO] - message sent: took 1,602,621
+21/09/2013 02:48:01.407] - [INFO] - message sent: took 1,253,732
+21/09/2013 02:48:01.755] - [INFO] - message sent: took 3,523,336
+21/09/2013 02:48:02.105] - [INFO] - message sent: took 2,729,927
+21/09/2013 02:48:02.451] - [INFO] - message sent: took 1,512,259
+21/09/2013 02:48:02.797] - [INFO] - message sent: took 1,242,386
+21/09/2013 02:48:03.141] - [INFO] - message sent: took 1,000,068
+21/09/2013 02:48:03.486] - [INFO] - message sent: took 1,471,737
+21/09/2013 02:48:03.830] - [INFO] - message sent: took 2,404,134
+21/09/2013 02:48:04.180] - [INFO] - message sent: took 2,895,659
+21/09/2013 02:48:04.527] - [INFO] - message sent: took 1,605,863
+21/09/2013 02:48:04.875] - [INFO] - message sent: took 1,850,612
+21/09/2013 02:48:05.221] - [INFO] - message sent: took 1,259,810
+21/09/2013 02:48:05.570] - [INFO] - message sent: took 1,236,713
+21/09/2013 02:48:05.915] - [INFO] - message sent: took 1,445,398
+21/09/2013 02:48:06.260] - [INFO] - message sent: took 1,859,122
+21/09/2013 02:48:06.599] - [INFO] - message sent: took 1,128,116
+21/09/2013 02:48:06.944] - [INFO] - message sent: took 1,421,491
+21/09/2013 02:48:07.288] - [INFO] - message sent: took 1,520,363
+21/09/2013 02:48:07.631] - [INFO] - message sent: took 1,219,289
+21/09/2013 02:48:07.977] - [INFO] - message sent: took 1,259,810
+21/09/2013 02:48:08.323] - [INFO] - message sent: took 1,374,891
+21/09/2013 02:48:08.668] - [INFO] - message sent: took 1,228,609
+21/09/2013 02:48:09.012] - [INFO] - message sent: took 1,445,803
+21/09/2013 02:48:09.358] - [INFO] - message sent: took 1,419,060
+21/09/2013 02:48:09.703] - [INFO] - message sent: took 1,461,201
+21/09/2013 02:48:10.048] - [INFO] - message sent: took 1,110,691
+21/09/2013 02:48:10.387] - [INFO] - message sent: took 1,245,628
+21/09/2013 02:48:10.728] - [INFO] - message sent: took 7,300,335
+21/09/2013 02:48:11.101] - [INFO] - message sent: took 34,946,868
+21/09/2013 02:48:11.466] - [INFO] - message sent: took 33,065,460
+21/09/2013 02:48:11.829] - [INFO] - message sent: took 28,947,270
+21/09/2013 02:48:12.195] - [INFO] - message sent: took 31,112,734
+21/09/2013 02:48:12.548] - [INFO] - message sent: took 21,524,966
+21/09/2013 02:48:12.883] - [INFO] - message sent: took 813,264
+21/09/2013 02:48:13.245] - [INFO] - message sent: took 30,552,323
+21/09/2013 02:48:13.628] - [INFO] - message sent: took 51,022,922
+21/09/2013 02:48:14.019] - [INFO] - message sent: took 58,116,193
+21/09/2013 02:48:14.408] - [INFO] - message sent: took 55,999,760
+21/09/2013 02:48:14.744] - [INFO] - message sent: took 810,428
+21/09/2013 02:48:15.093] - [INFO] - message sent: took 814,074
+21/09/2013 02:48:15.440] - [INFO] - message sent: took 1,956,373
+21/09/2013 02:48:15.789] - [INFO] - message sent: took 1,185,251
+21/09/2013 02:48:16.131] - [INFO] - message sent: took 1,161,344
+21/09/2013 02:48:16.475] - [INFO] - message sent: took 1,163,369
+21/09/2013 02:48:16.822] - [INFO] - message sent: took 1,141,488
+21/09/2013 02:48:17.166] - [INFO] - message sent: took 1,167,016
+21/09/2013 02:48:17.513] - [INFO] - message sent: took 1,129,331
+21/09/2013 02:48:17.858] - [INFO] - message sent: took 2,607,957
+21/09/2013 02:48:18.201] - [INFO] - message sent: took 962,383
+21/09/2013 02:48:18.542] - [INFO] - message sent: took 752,077
+21/09/2013 02:48:18.890] - [INFO] - message sent: took 1,153,238
+21/09/2013 02:48:19.237] - [INFO] - message sent: took 2,877,019
+21/09/2013 02:48:19.581] - [INFO] - message sent: took 1,227,393
+21/09/2013 02:48:19.926] - [INFO] - message sent: took 1,217,263
+21/09/2013 02:48:20.270] - [INFO] - message sent: took 1,113,933
+21/09/2013 02:48:20.616] - [INFO] - message sent: took 789,357
+21/09/2013 02:48:20.959] - [INFO] - message sent: took 1,509,422
+21/09/2013 02:48:21.305] - [INFO] - message sent: took 3,259,946
+21/09/2013 02:48:21.650] - [INFO] - message sent: took 1,222,936
+21/09/2013 02:48:21.996] - [INFO] - message sent: took 1,128,521
+21/09/2013 02:48:22.341] - [INFO] - message sent: took 1,135,004
+21/09/2013 02:48:22.697] - [INFO] - message sent: took 11,574,532
+21/09/2013 02:48:23.036] - [INFO] - message sent: took 826,637
+21/09/2013 02:48:23.370] - [INFO] - message sent: took 974,135
+21/09/2013 02:48:23.738] - [INFO] - message sent: took 33,938,291
+21/09/2013 02:48:24.128] - [INFO] - message sent: took 58,048,116
+21/09/2013 02:48:24.542] - [INFO] - message sent: took 79,912,653
+21/09/2013 02:48:24.907] - [INFO] - message sent: took 31,214,847
+21/09/2013 02:48:25.280] - [INFO] - message sent: took 41,254,429
+21/09/2013 02:48:25.678] - [INFO] - message sent: took 64,925,003
+21/09/2013 02:48:26.012] - [INFO] - message sent: took 814,075
+21/09/2013 02:48:26.381] - [INFO] - message sent: took 31,757,834
+21/09/2013 02:48:26.750] - [INFO] - message sent: took 35,443,661
+21/09/2013 02:48:27.084] - [INFO] - message sent: took 1,236,308
+21/09/2013 02:48:27.448] - [INFO] - message sent: took 31,718,123
+21/09/2013 02:48:27.818] - [INFO] - message sent: took 23,337,894
+21/09/2013 02:48:28.156] - [INFO] - message sent: took 1,406,498
+21/09/2013 02:48:28.505] - [INFO] - message sent: took 1,152,429
+21/09/2013 02:48:28.850] - [INFO] - message sent: took 1,150,808
+21/09/2013 02:48:29.193] - [INFO] - message sent: took 1,504,964
+21/09/2013 02:48:29.539] - [INFO] - message sent: took 1,379,348
+21/09/2013 02:48:29.883] - [INFO] - message sent: took 1,167,421
+21/09/2013 02:48:30.227] - [INFO] - message sent: took 844,871
+21/09/2013 02:48:30.573] - [INFO] - message sent: took 1,802,797
+21/09/2013 02:48:30.917] - [INFO] - message sent: took 1,231,851
+21/09/2013 02:48:31.263] - [INFO] - message sent: took 1,758,629
+21/09/2013 02:48:31.608] - [INFO] - message sent: took 844,871
+21/09/2013 02:48:31.951] - [INFO] - message sent: took 1,175,121
+21/09/2013 02:48:32.294] - [INFO] - message sent: took 1,703,925
+21/09/2013 02:48:32.641] - [INFO] - message sent: took 1,132,978
+21/09/2013 02:48:32.988] - [INFO] - message sent: took 1,183,630
+21/09/2013 02:48:33.374] - [INFO] - message sent: took 932,398
+21/09/2013 02:48:33.713] - [INFO] - message sent: took 867,563
+21/09/2013 02:48:34.057] - [INFO] - message sent: took 1,130,953
+21/09/2013 02:48:34.402] - [INFO] - message sent: took 1,158,101
+21/09/2013 02:48:34.748] - [INFO] - message sent: took 1,249,275
+21/09/2013 02:48:35.094] - [INFO] - message sent: took 1,118,796
+21/09/2013 02:48:35.439] - [INFO] - message sent: took 3,657,056
+21/09/2013 02:48:35.780] - [INFO] - message sent: took 927,535
+21/09/2013 02:48:36.124] - [INFO] - message sent: took 2,400,893
+21/09/2013 02:48:36.473] - [INFO] - message sent: took 1,215,237
+21/09/2013 02:48:36.818] - [INFO] - message sent: took 814,075
+21/09/2013 02:48:37.162] - [INFO] - message sent: took 1,081,111
+21/09/2013 02:48:37.508] - [INFO] - message sent: took 2,479,504
+21/09/2013 02:48:37.853] - [INFO] - message sent: took 1,474,979
+21/09/2013 02:48:38.201] - [INFO] - message sent: took 1,151,619
+21/09/2013 02:48:38.545] - [INFO] - message sent: took 1,130,547
+21/09/2013 02:48:38.888] - [INFO] - message sent: took 2,483,151
+21/09/2013 02:48:39.234] - [INFO] - message sent: took 1,234,282
+21/09/2013 02:48:39.583] - [INFO] - message sent: took 1,134,599
+21/09/2013 02:48:39.931] - [INFO] - message sent: took 1,190,114
+21/09/2013 02:48:40.279] - [INFO] - message sent: took 1,524,010
+21/09/2013 02:48:40.637] - [INFO] - message sent: took 8,215,308
+21/09/2013 02:48:40.992] - [INFO] - message sent: took 771,123
+21/09/2013 02:48:41.341] - [INFO] - message sent: took 707,098
+21/09/2013 02:48:41.687] - [INFO] - message sent: took 1,102,182
+21/09/2013 02:48:42.038] - [INFO] - message sent: took 8,614,038
+21/09/2013 02:48:42.387] - [INFO] - message sent: took 1,062,876
+21/09/2013 02:48:42.725] - [INFO] - message sent: took 1,060,850
+21/09/2013 02:48:43.089] - [INFO] - message sent: took 29,393,006
+21/09/2013 02:48:43.429] - [INFO] - message sent: took 1,001,283
+21/09/2013 02:48:43.782] - [INFO] - message sent: took 2,804,891
+21/09/2013 02:48:44.127] - [INFO] - message sent: took 955,900
+21/09/2013 02:48:44.474] - [INFO] - message sent: took 1,031,674
+21/09/2013 02:48:44.823] - [INFO] - message sent: took 4,313,502
+21/09/2013 02:48:45.170] - [INFO] - message sent: took 1,154,860
+21/09/2013 02:48:45.541] - [INFO] - message sent: took 27,643,292
+21/09/2013 02:48:45.882] - [INFO] - message sent: took 2,185,319
+21/09/2013 02:48:46.227] - [INFO] - message sent: took 1,138,246
+21/09/2013 02:48:46.575] - [INFO] - message sent: took 1,129,737
+21/09/2013 02:48:46.920] - [INFO] - message sent: took 1,108,260
+21/09/2013 02:48:47.265] - [INFO] - message sent: took 1,183,224
+21/09/2013 02:48:47.612] - [INFO] - message sent: took 1,199,433
+21/09/2013 02:48:48.002] - [INFO] - message sent: took 10,169,655
+21/09/2013 02:48:48.380] - [INFO] - message sent: took 901,196
+21/09/2013 02:48:48.741] - [INFO] - message sent: took 1,133,383
+21/09/2013 02:48:49.089] - [INFO] - message sent: took 1,218,074
+21/09/2013 02:48:49.433] - [INFO] - message sent: took 1,173,500
+21/09/2013 02:48:49.775] - [INFO] - message sent: took 1,701,089
+21/09/2013 02:48:50.116] - [INFO] - message sent: took 873,642
+21/09/2013 02:48:50.459] - [INFO] - message sent: took 1,212,806
+21/09/2013 02:48:50.808] - [INFO] - message sent: took 2,839,740
+21/09/2013 02:48:51.155] - [INFO] - message sent: took 2,325,117
+21/09/2013 02:48:51.499] - [INFO] - message sent: took 1,232,256
+21/09/2013 02:48:51.844] - [INFO] - message sent: took 1,063,281
+21/09/2013 02:48:52.191] - [INFO] - message sent: took 1,144,324
+21/09/2013 02:48:52.536] - [INFO] - message sent: took 1,301,953
+21/09/2013 02:48:52.878] - [INFO] - message sent: took 1,040,995
+21/09/2013 02:48:53.215] - [INFO] - message sent: took 2,801,649
+21/09/2013 02:48:53.548] - [INFO] - message sent: took 832,310
+21/09/2013 02:48:53.882] - [INFO] - message sent: took 813,265
+21/09/2013 02:48:54.216] - [INFO] - message sent: took 692,511
+21/09/2013 02:48:54.563] - [INFO] - message sent: took 1,209,564
+21/09/2013 02:48:54.910] - [INFO] - message sent: took 1,956,373
+21/09/2013 02:48:55.252] - [INFO] - message sent: took 1,372,865
+21/09/2013 02:48:55.599] - [INFO] - message sent: took 1,164,585
+21/09/2013 02:48:55.944] - [INFO] - message sent: took 1,079,895
+21/09/2013 02:48:56.287] - [INFO] - message sent: took 1,140,677
+21/09/2013 02:48:56.633] - [INFO] - message sent: took 1,110,691
+21/09/2013 02:48:56.977] - [INFO] - message sent: took 1,041,805
+21/09/2013 02:48:57.342] - [INFO] - message sent: took 20,805,712
+21/09/2013 02:48:57.686] - [INFO] - message sent: took 1,111,907
+21/09/2013 02:48:58.029] - [INFO] - message sent: took 1,141,893
+21/09/2013 02:48:58.376] - [INFO] - message sent: took 875,668
+21/09/2013 02:48:58.723] - [INFO] - message sent: took 1,099,751
+21/09/2013 02:48:59.069] - [INFO] - message sent: took 1,144,324
+21/09/2013 02:48:59.433] - [INFO] - message sent: took 16,763,297
+21/09/2013 02:48:59.782] - [INFO] - message sent: took 5,659,623
+21/09/2013 02:49:00.123] - [INFO] - message sent: took 840,819
+21/09/2013 02:49:00.464] - [INFO] - message sent: took 2,522,457
+21/09/2013 02:49:00.829] - [INFO] - message sent: took 11,050,995
+21/09/2013 02:49:01.164] - [INFO] - message sent: took 971,703
+21/09/2013 02:49:01.540] - [INFO] - message sent: took 42,696,990
+21/09/2013 02:49:01.882] - [INFO] - message sent: took 906,868
+21/09/2013 02:49:02.217] - [INFO] - message sent: took 730,601
+21/09/2013 02:49:02.559] - [INFO] - message sent: took 1,344,095
+21/09/2013 02:49:02.906] - [INFO] - message sent: took 761,802
+21/09/2013 02:49:03.279] - [INFO] - message sent: took 30,084,705
+21/09/2013 02:49:03.624] - [INFO] - message sent: took 3,666,781
+21/09/2013 02:49:03.972] - [INFO] - message sent: took 1,318,566
+21/09/2013 02:49:04.318] - [INFO] - message sent: took 1,123,659
+21/09/2013 02:49:04.657] - [INFO] - message sent: took 996,827
+21/09/2013 02:49:05.001] - [INFO] - message sent: took 1,097,724
+21/09/2013 02:49:05.348] - [INFO] - message sent: took 1,572,230
+21/09/2013 02:49:05.688] - [INFO] - message sent: took 785,710
+21/09/2013 02:49:06.031] - [INFO] - message sent: took 1,368,812
+21/09/2013 02:49:06.379] - [INFO] - message sent: took 1,268,320
+21/09/2013 02:49:06.724] - [INFO] - message sent: took 1,089,216
+21/09/2013 02:49:07.068] - [INFO] - message sent: took 1,140,677
+21/09/2013 02:49:07.415] - [INFO] - message sent: took 1,201,865
+21/09/2013 02:49:07.760] - [INFO] - message sent: took 1,077,869
+21/09/2013 02:49:08.102] - [INFO] - message sent: took 786,926
+21/09/2013 02:49:08.448] - [INFO] - message sent: took 1,427,974
+21/09/2013 02:49:08.829] - [INFO] - message sent: took 34,987,389
+21/09/2013 02:49:09.171] - [INFO] - message sent: took 1,065,713
+21/09/2013 02:49:09.518] - [INFO] - message sent: took 1,902,885
+21/09/2013 02:49:09.909] - [INFO] - message sent: took 45,874,273
+21/09/2013 02:49:29.989] - [INFO] - [id: 0x16d6a95f, /127.0.0.1:2218 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 02:49:30.002] - [INFO] - [id: 0x16d6a95f, /127.0.0.1:2218 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 02:49:30.003] - [INFO] - [id: 0x16d6a95f, /127.0.0.1:2218 :> localhost/127.0.0.1:19999] CLOSED
