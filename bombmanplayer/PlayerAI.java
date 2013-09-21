@@ -5,11 +5,13 @@ import com.orbischallenge.bombman.api.game.PlayerAction;
 import com.orbischallenge.bombman.api.game.PowerUps;
 
 import java.awt.Point;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Random;
+import java.util.Set;
 
 import org.apache.commons.logging.Log;
 
@@ -123,5 +125,46 @@ public class PlayerAI implements Player {
 		if (y >= column)
 			return false;
 		return true;
+	}
+	
+	private boolean isSafe(Point position, HashMap<Point, Bomb> bombLocations) {
+		Set<Point> locations = bombLocations.keySet();
+		for(Point loc: locations){
+			Bomb b = bombLocations.get(loc);
+			int bRange = b.getRange();
+			if (position.x < loc.x + bRange && loc.x - bRange < position.x){
+				if(position.y < loc.y + bRange && loc.y - bRange < position.y) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	private Point findEvacuation(MapItems[][] map, Point position, HashMap<Point, Bomb> bombLocations) {
+		return position; //TODO FINISH THIS
+	}
+	
+	private PlayerAction connectNeighbourPoints(Point A, Point B) {
+		if(A.x + 1 == B.x) {
+			return Move.right.action;
+		} else 	if (A.y + 1 == B.y) {
+			return Move.up.action;
+		} else if (A.y - 1 == B.y) {
+			return Move.down.action;
+		} else {
+			return Move.left.action;
+		} 
+	}
+	
+	private LinkedList<PlayerAction> getPathFromPoints(LinkedList<Point> points) {
+		int numPoints = points.size();
+		LinkedList<PlayerAction> Path = new LinkedList<PlayerAction>();
+		for (int i=0; i < numPoints - 1;i++) {
+			Point p = points.get(i);
+			Point neighbour = points.get(i + 1);
+			Path.addLast(connectNeighbourPoints(p, neighbour));
+		}
+		return Path;
 	}
 }
