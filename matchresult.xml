@@ -3,21 +3,11 @@
   <match>
     <score>
       <playername>player</playername>
-      <value>700</value>
+      <value>329</value>
     </score>
     <score>
       <playername>Human1</playername>
-      <value>300</value>
-    </score>
-  </match>
-  <match>
-    <score>
-      <playername>player</playername>
-      <value>400</value>
-    </score>
-    <score>
-      <playername>Human1</playername>
-      <value>0</value>
+      <value>1000</value>
     </score>
   </match>
 </matches>

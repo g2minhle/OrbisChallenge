@@ -141,7 +141,7 @@ public class PlayerAI implements Player {
 			}
 			if (!nearBlock) {
 				LinkedList<Point> pathToNearestBlocks = findNearestBlock(
-						curPosition, map);
+						curPosition, map, bombLocations, explosionLocations);
 				if (pathToNearestBlocks != null) {
 					System.out.println("There is a valid path");
 					LinkedList<PlayerAction> path = getPathFromPoints(pathToNearestBlocks);
@@ -159,7 +159,7 @@ public class PlayerAI implements Player {
 			}
 		} else {
 			System.out.println("In danger");
-			GTFO = true; 
+			GTFO = true;
 			LinkedList<Point> pathToNearestBlocks = findSafestBlock(
 					curPosition, map, bombLocations);
 			if (pathToNearestBlocks != null) {
@@ -183,24 +183,29 @@ public class PlayerAI implements Player {
 			if (pathToNearestBlocks == null) {
 				action = Move.still.action;
 			}
-		} else if (action != Move.still.action) {			
-			for (int i = 0; i < 4; i++) {
-				if (action == movePlayerAction[i]) {
-					int x = curPosition.x + dx[i];
-					int y = curPosition.y + dy[i];
-					Point p = new Point(x,y);
-					if (!isSafe(p, bombLocations, map) && !GTFO){
-						action = Move.still.action;
-					}
-					if (explosionLocations.contains(p)){
-						action = Move.still.action;
-					}
-					break;
-				}
+		} else if (action != Move.still.action) {
+			Point nextPoint = getNextPoint(action, curPosition);
+			if (!isSafe(nextPoint, bombLocations, map) && !GTFO) {
+				action = Move.still.action;
+			}
+			if (explosionLocations.contains(nextPoint)) {
+				action = Move.still.action;
 			}
 		}
 		System.out.println("Do action " + action);
 		return action;
+	}
+
+	private Point getNextPoint(PlayerAction action, Point curPosition) {
+		for (int i = 0; i < 4; i++) {
+			if (action == movePlayerAction[i]) {
+				int x = curPosition.x + dx[i];
+				int y = curPosition.y + dy[i];
+				Point result = new Point(x, y);
+				return result;
+			}
+		}
+		return null;
 	}
 
 	private boolean validAddress(int x, int y) {
@@ -232,7 +237,8 @@ public class PlayerAI implements Player {
 	 * @return True if there is a walkable path between point A and point B,
 	 *         False otherwise.
 	 */
-	public LinkedList<Point> findNearestBlock(Point start, MapItems[][] map) {
+	public LinkedList<Point> findNearestBlock(Point start, MapItems[][] map,
+			HashMap<Point, Bomb> bombLocations, List<Point> explosionLocations) {
 		// Keeps track of points we have to check
 		int currentHead = 0;
 		LinkedList<Point> queue = new LinkedList<Point>();
@@ -253,29 +259,32 @@ public class PlayerAI implements Player {
 				Point next = new Point(x, y);
 				if (validAddress(x, y)) {
 					if (!visited.contains(next)) {
-						if (allBlocks.contains(next)) {
-							// Found the thing
-							System.out.println("Good spot: " + x + "." + y);
-							int father = currentHead - 1;
-							LinkedList<Point> result = new LinkedList<Point>();
-							result.add(next);
-							System.out.println("Add: " + next.x + "." + next.y);
-							Point currentPoint;
-							while (father != -1) {
-								System.out.println("Father : " + father);
-								currentPoint = queue.get(father);
-								System.out.println("Add: " + currentPoint.x
-										+ "." + currentPoint.y);
-								result.addFirst(currentPoint);
-								father = trace.get(father);
+						if (isSafe(next, bombLocations, map) && !explosionLocations.contains(next)) {
+							if (allBlocks.contains(next)) {
+								// Found the thing
+								System.out.println("Good spot: " + x + "." + y);
+								int father = currentHead - 1;
+								LinkedList<Point> result = new LinkedList<Point>();
+								result.add(next);
+								System.out.println("Add: " + next.x + "."
+										+ next.y);
+								Point currentPoint;
+								while (father != -1) {
+									System.out.println("Father : " + father);
+									currentPoint = queue.get(father);
+									System.out.println("Add: " + currentPoint.x
+											+ "." + currentPoint.y);
+									result.addFirst(currentPoint);
+									father = trace.get(father);
+								}
+								// return the path
+								return result;
+							} else if (map[x][y].isWalkable()) {
+								System.out.println("Enqueue: " + x + "." + y);
+								queue.addLast(next);
+								visited.addLast(next);
+								trace.add(currentHead - 1);
 							}
-							// return the path
-							return result;
-						} else if (map[x][y].isWalkable()) {
-							System.out.println("Enqueue: " + x + "." + y);
-							queue.addLast(next);
-							visited.addLast(next);
-							trace.add(currentHead - 1);
 						}
 					}
 				}
