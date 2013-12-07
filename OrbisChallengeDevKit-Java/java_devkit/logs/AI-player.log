@@ -1,0 +1,43 @@
+21/09/2013 12:26:27.763] - [INFO] - [id: 0x4e91d5e1] OPEN
+21/09/2013 12:26:27.808] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 => localhost/127.0.0.1:19999] BOUND: /127.0.0.1:1362
+21/09/2013 12:26:27.812] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 => localhost/127.0.0.1:19999] CONNECTED: localhost/127.0.0.1:19999
+21/09/2013 12:26:28.747] - [INFO] - message sent: took 7,824,682
+21/09/2013 12:26:29.115] - [INFO] - message sent: took 2,342,136
+21/09/2013 12:26:30.026] - [INFO] - message sent: took 3,015,197
+21/09/2013 12:26:30.390] - [INFO] - message sent: took 2,483,151
+21/09/2013 12:26:30.771] - [INFO] - message sent: took 2,077,937
+21/09/2013 12:26:31.133] - [INFO] - message sent: took 1,875,330
+21/09/2013 12:26:31.484] - [INFO] - message sent: took 519,889
+21/09/2013 12:26:31.834] - [INFO] - message sent: took 306,747
+21/09/2013 12:26:32.179] - [INFO] - message sent: took 420,612
+21/09/2013 12:26:32.527] - [INFO] - message sent: took 420,612
+21/09/2013 12:26:32.875] - [INFO] - message sent: took 416,966
+21/09/2013 12:26:33.227] - [INFO] - message sent: took 419,802
+21/09/2013 12:26:33.575] - [INFO] - message sent: took 421,017
+21/09/2013 12:26:33.929] - [INFO] - message sent: took 422,233
+21/09/2013 12:26:34.275] - [INFO] - message sent: took 420,207
+21/09/2013 12:26:34.624] - [INFO] - message sent: took 418,181
+21/09/2013 12:26:34.979] - [INFO] - message sent: took 496,792
+21/09/2013 12:26:35.330] - [INFO] - message sent: took 432,769
+21/09/2013 12:26:35.676] - [INFO] - message sent: took 414,128
+21/09/2013 12:26:44.621] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] DISCONNECTED
+21/09/2013 12:26:44.626] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] UNBOUND
+21/09/2013 12:26:44.631] - [INFO] - [id: 0x4e91d5e1, /127.0.0.1:1362 :> localhost/127.0.0.1:19999] CLOSED
+21/09/2013 12:46:47.103] - [INFO] - [id: 0xa7642d9a] OPEN
+21/09/2013 12:46:48.117] - [INFO] - [id: 0xa7642d9a] CLOSED
+21/09/2013 12:46:48.158] - [SEVERE] - Unexptected exception from upstream.
+java.nio.channels.ClosedChannelException
+	at org.jboss.netty.channel.socket.oio.OioWorker.write(OioWorker.java:83)
+	at org.jboss.netty.channel.socket.oio.OioClientSocketPipelineSink.eventSunk(OioClientSocketPipelineSink.java:79)
+	at org.jboss.netty.channel.Channels.write(Channels.java:725)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.Channels.write(Channels.java:725)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at Client.run(Client.java:46)
+	at RunClient.main(RunClient.java:38)
+
