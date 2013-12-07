@@ -140,8 +140,8 @@ public class PlayerAI implements Player {
 				}
 			}
 			if (!nearBlock) {
-				LinkedList<Point> pathToNearestBlocks = findNearestBlock(
-						curPosition, map, bombLocations, explosionLocations);
+				LinkedList<Point> pathToNearestBlocks = findNearestBlock(	
+						curPosition, map, bombLocations, powerUpLocations,explosionLocations);
 				if (pathToNearestBlocks != null) {
 					System.out.println("There is a valid path");
 					LinkedList<PlayerAction> path = getPathFromPoints(pathToNearestBlocks);
@@ -238,7 +238,7 @@ public class PlayerAI implements Player {
 	 *         False otherwise.
 	 */
 	public LinkedList<Point> findNearestBlock(Point start, MapItems[][] map,
-			HashMap<Point, Bomb> bombLocations, List<Point> explosionLocations) {
+			HashMap<Point, Bomb> bombLocations,HashMap<Point, PowerUps> powerUpLocations, List<Point> explosionLocations) {
 		// Keeps track of points we have to check
 		int currentHead = 0;
 		LinkedList<Point> queue = new LinkedList<Point>();
@@ -260,7 +260,7 @@ public class PlayerAI implements Player {
 				if (validAddress(x, y)) {
 					if (!visited.contains(next)) {
 						if (isSafe(next, bombLocations, map) && !explosionLocations.contains(next)) {
-							if (allBlocks.contains(next)) {
+							if (allBlocks.contains(next) || (powerUpLocations.containsKey(next) && map[x][y].isWalkable()) ) {
 								// Found the thing
 								System.out.println("Good spot: " + x + "." + y);
 								int father = currentHead - 1;
@@ -376,7 +376,7 @@ public class PlayerAI implements Player {
 	}
 
 	private LinkedList<PlayerAction> getPathFromPoints(LinkedList<Point> points) {
-		int n = points.size() - 2;
+		int n = points.size() - 1;
 		LinkedList<PlayerAction> Path = new LinkedList<PlayerAction>();
 		for (int i = 0; i < n; i++) {
 			Point p = points.get(i);
